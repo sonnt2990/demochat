@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="zitga-core-master">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../Source-code/zitga-core-master" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../Source-code/zitga-core-master/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../Source-code/zitga-core-master/src/test/java" />
+    </SOURCES>
+  </library>
+</component>
