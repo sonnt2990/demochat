@@ -17,9 +17,10 @@ public class MainServer {
 
         } catch (Exception e) {
 
-            ServerBootstrap.stop();
-
-            logger.error(e.getMessage(), e);
+        	logger.error(e.getMessage(), e);
+        	
+            ServerBootstrap.stop();      
+            
             throw new RuntimeException(e);
         }
 
