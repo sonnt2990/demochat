@@ -4,6 +4,8 @@ import com.zitga.bean.annotation.BeanField;
 import com.zitga.chat.base.ConnectionService;
 import com.zitga.chat.base.constant.OpCode;
 import com.zitga.chat.base.handler.AuthorizedHandler;
+import com.zitga.chat.server.model.MessageModel;
+import com.zitga.chat.server.service.MessageService;
 import com.zitga.core.annotation.socket.SocketHandler;
 import com.zitga.core.handler.socket.support.context.HandlerContext;
 import com.zitga.core.handler.socket.support.context.Peer;
@@ -15,28 +17,32 @@ import org.slf4j.LoggerFactory;
 
 @SocketHandler(OpCode.SERVER_MESSAGE_RECEIVED)
 public class MessageHandler extends AuthorizedHandler {
-    protected final Logger logger = LoggerFactory.getLogger(this.getClass());
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
     @BeanField
     private ConnectionService connectionService;
+
+    @BeanField
+    private MessageService messageService;
+
     @Override
     protected void handle(HandlerContext context, int opCode, ByteBuf in) throws Exception {
 
-//        logger.info(String.valueOf(opCode));
         String message = SerializeHelper.readString(in);
-//        logger.info(message);
-        System.out.println(message);
+
+        MessageModel messageModel = new MessageModel(context.getPeer().getId(), "all", message);
+        messageService.messageSaveService(messageModel);
+
 
         ByteBuf out = SocketUtils.createByteBuf(opCode);
         SerializeHelper.writeString(out, message);
 
-//        context.getPeer().send(out);
-
-        for(Peer peer: connectionService.peer){
+        for (Peer peer : connectionService.peer) {
             logger.info(peer.toString());
 
             ByteBuf temp = out.copy();
             peer.send(temp);
         }
+
 
         SocketUtils.release(out);
 
