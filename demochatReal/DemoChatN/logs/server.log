@@ -3444,3 +3444,1442 @@ NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=
 2021-03-05 18:14:13,802 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
 2021-03-05 18:14:16,884 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
 2021-03-05 18:14:16,884 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 19:59:28,235 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 19:59:28,243 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 19:59:28,244 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 19:59:28,586 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 15 components
+2021-03-07 19:59:29,040 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 19:59:29,053 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 19:59:29,056 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 19:59:29,078 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 19:59:29,482 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 19:59:29,482 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 19:59:29,482 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 19:59:29,483 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 19:59:29,489 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 19:59:29,491 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 31 to com.zitga.chat.server.handler.MessasgeSendHandler
+2021-03-07 19:59:30,254 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 19:59:30,256 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 19:59:30,257 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:01:00,708 INFO c.z.c.b.ConnectionService: Loi saveClient
+org.mongodb.morphia.mapping.MappingException: No usable constructor for com.zitga.chat.server.model.ClientModel
+	at org.mongodb.morphia.mapping.DefaultCreator.createInstance(DefaultCreator.java:81) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.mapping.DefaultCreator.createInstance(DefaultCreator.java:91) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.mapping.Mapper.fromDBObject(Mapper.java:192) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.query.MorphiaIterator.convertItem(MorphiaIterator.java:134) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.query.MorphiaIterator.processItem(MorphiaIterator.java:146) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.query.MorphiaIterator.next(MorphiaIterator.java:117) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.query.QueryImpl.asList(QueryImpl.java:147) ~[zitga-morphia-revised.jar:?]
+	at com.zitga.chat.server.dao.ClientDAO.findAll(ClientDAO.java:23) ~[classes/:?]
+	at com.zitga.chat.server.service.ClientService.allFind(ClientService.java:23) ~[classes/:?]
+	at com.zitga.chat.base.ConnectionService.onConnected(ConnectionService.java:28) [classes/:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.channelActive(SocketDispatcher.java:41) [zitga-core.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:230) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:216) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:209) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelActive(ChannelInboundHandlerAdapter.java:69) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelActive(IdleStateHandler.java:271) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:230) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:216) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:209) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at com.zitga.core.handler.socket.support.SocketConnectionLimitHandler.channelActive(SocketConnectionLimitHandler.java:37) [zitga-core.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:230) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:216) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:209) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelActive(DefaultChannelPipeline.java:1398) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:230) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:216) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelActive(DefaultChannelPipeline.java:895) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:510) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:417) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:474) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:164) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.mongodb.morphia.mapping.MappingException: No usable constructor for com.zitga.chat.server.model.ClientModel
+	at org.mongodb.morphia.mapping.DefaultCreator.getNoArgsConstructor(DefaultCreator.java:53) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.mapping.DefaultCreator.createInstance(DefaultCreator.java:72) ~[zitga-morphia-revised.jar:?]
+	... 37 more
+Caused by: java.lang.NoSuchMethodException: com.zitga.chat.server.model.ClientModel.<init>()
+	at java.lang.Class.getConstructor0(Class.java:3082) ~[?:1.8.0_191]
+	at java.lang.Class.getDeclaredConstructor(Class.java:2178) ~[?:1.8.0_191]
+	at org.mongodb.morphia.mapping.DefaultCreator.getNoArgsConstructor(DefaultCreator.java:49) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.mapping.DefaultCreator.createInstance(DefaultCreator.java:72) ~[zitga-morphia-revised.jar:?]
+	... 37 more
+2021-03-07 20:03:12,611 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:03:12,612 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 20:04:09,964 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:04:09,975 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:04:09,976 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:04:10,430 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 15 components
+2021-03-07 20:04:10,999 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 20:04:11,020 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 20:04:11,027 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:04:11,110 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 20:04:11,361 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:04:11,361 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 20:04:11,361 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:04:11,362 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:04:11,367 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:04:11,367 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 31 to com.zitga.chat.server.handler.MessasgeSendHandler
+2021-03-07 20:04:12,126 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 20:04:12,128 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:04:12,128 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:05:13,503 INFO c.z.c.b.ConnectionService: Loi saveClient
+org.mongodb.morphia.mapping.MappingException: No usable constructor for com.zitga.chat.server.model.ClientModel
+	at org.mongodb.morphia.mapping.DefaultCreator.createInstance(DefaultCreator.java:81) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.mapping.DefaultCreator.createInstance(DefaultCreator.java:91) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.mapping.Mapper.fromDBObject(Mapper.java:192) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.query.MorphiaIterator.convertItem(MorphiaIterator.java:134) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.query.MorphiaIterator.processItem(MorphiaIterator.java:146) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.query.MorphiaIterator.next(MorphiaIterator.java:117) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.query.QueryImpl.asList(QueryImpl.java:147) ~[zitga-morphia-revised.jar:?]
+	at com.zitga.chat.server.dao.ClientDAO.findAll(ClientDAO.java:23) ~[classes/:?]
+	at com.zitga.chat.server.service.ClientService.allFind(ClientService.java:23) ~[classes/:?]
+	at com.zitga.chat.base.ConnectionService.onConnected(ConnectionService.java:28) [classes/:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.channelActive(SocketDispatcher.java:41) [zitga-core.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:230) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:216) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:209) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelActive(ChannelInboundHandlerAdapter.java:69) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelActive(IdleStateHandler.java:271) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:230) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:216) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:209) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at com.zitga.core.handler.socket.support.SocketConnectionLimitHandler.channelActive(SocketConnectionLimitHandler.java:37) [zitga-core.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:230) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:216) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:209) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelActive(DefaultChannelPipeline.java:1398) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:230) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:216) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelActive(DefaultChannelPipeline.java:895) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:510) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:417) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:474) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:164) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.mongodb.morphia.mapping.MappingException: No usable constructor for com.zitga.chat.server.model.ClientModel
+	at org.mongodb.morphia.mapping.DefaultCreator.getNoArgsConstructor(DefaultCreator.java:53) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.mapping.DefaultCreator.createInstance(DefaultCreator.java:72) ~[zitga-morphia-revised.jar:?]
+	... 37 more
+Caused by: java.lang.NoSuchMethodException: com.zitga.chat.server.model.ClientModel.<init>()
+	at java.lang.Class.getConstructor0(Class.java:3082) ~[?:1.8.0_191]
+	at java.lang.Class.getDeclaredConstructor(Class.java:2178) ~[?:1.8.0_191]
+	at org.mongodb.morphia.mapping.DefaultCreator.getNoArgsConstructor(DefaultCreator.java:49) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.mapping.DefaultCreator.createInstance(DefaultCreator.java:72) ~[zitga-morphia-revised.jar:?]
+	... 37 more
+2021-03-07 20:05:13,603 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:05:13,604 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 20:05:23,674 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:05:23,681 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:05:23,682 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:05:24,454 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 15 components
+2021-03-07 20:05:25,894 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 20:05:25,908 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 20:05:25,911 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:05:25,936 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 20:05:26,177 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:05:26,178 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 20:05:26,178 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:05:26,178 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:05:26,182 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:05:26,183 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 31 to com.zitga.chat.server.handler.MessasgeSendHandler
+2021-03-07 20:05:26,872 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 20:05:26,875 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:05:26,875 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:07:02,347 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:07:02,350 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 20:08:55,152 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:08:55,161 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:08:55,162 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:08:55,702 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 15 components
+2021-03-07 20:08:56,668 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 20:08:56,692 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 20:08:56,699 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:08:56,740 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 20:08:57,145 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:08:57,145 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 20:08:57,147 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:08:57,147 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:08:57,156 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:08:57,156 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 31 to com.zitga.chat.server.handler.MessasgeSendHandler
+2021-03-07 20:08:58,580 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 20:08:58,583 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:08:58,583 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:10:18,758 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 20:11:19,526 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:11:30,518 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:11:30,526 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:11:30,527 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:11:31,237 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 15 components
+2021-03-07 20:11:32,334 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 20:11:32,349 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 20:11:32,354 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:11:32,376 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 20:11:32,672 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:11:32,672 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 20:11:32,672 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:11:32,673 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:11:32,677 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:11:32,678 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 31 to com.zitga.chat.server.handler.MessasgeSendHandler
+2021-03-07 20:11:33,437 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 20:11:33,438 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:11:33,439 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:12:09,430 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:12:09,438 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:12:09,438 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:12:10,019 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 15 components
+2021-03-07 20:12:10,947 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 20:12:10,974 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 20:12:10,978 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:12:11,005 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 20:12:11,314 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:12:11,314 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 20:12:11,314 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:12:11,314 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:12:11,318 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:12:11,319 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 31 to com.zitga.chat.server.handler.MessasgeSendHandler
+2021-03-07 20:12:11,891 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 20:12:11,892 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:12:11,893 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:12:24,589 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 20:13:09,260 INFO c.z.c.s.d.MessageHistoryDAO: Saved message!!
+2021-03-07 20:13:09,260 INFO c.z.c.s.s.MessageService: Saved!!
+2021-03-07 20:13:09,261 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@7c2435eb
+2021-03-07 20:13:42,162 INFO c.z.c.s.d.MessageHistoryDAO: Saved message!!
+2021-03-07 20:13:42,163 INFO c.z.c.s.s.MessageService: Saved!!
+2021-03-07 20:13:42,164 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@7c2435eb
+2021-03-07 20:13:47,468 INFO c.z.c.s.d.MessageHistoryDAO: Saved message!!
+2021-03-07 20:13:47,468 INFO c.z.c.s.s.MessageService: Saved!!
+2021-03-07 20:13:47,469 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@7c2435eb
+2021-03-07 20:15:07,538 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 20:15:23,935 INFO c.z.c.s.d.MessageHistoryDAO: Saved message!!
+2021-03-07 20:15:23,936 INFO c.z.c.s.s.MessageService: Saved!!
+2021-03-07 20:15:23,936 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@7c2435eb
+2021-03-07 20:15:23,937 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@400e2728
+2021-03-07 20:15:31,067 INFO c.z.c.s.d.MessageHistoryDAO: Saved message!!
+2021-03-07 20:15:31,068 INFO c.z.c.s.s.MessageService: Saved!!
+2021-03-07 20:15:31,068 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@7c2435eb
+2021-03-07 20:15:31,068 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@400e2728
+2021-03-07 20:16:08,190 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:16:08,191 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 20:22:45,001 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:22:45,010 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:22:45,010 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:22:45,424 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 20:22:45,907 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 20:22:45,969 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 20:22:45,973 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:22:45,992 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 20:22:46,291 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:22:46,292 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 20:22:46,293 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:22:46,293 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:22:46,302 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:22:47,029 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 20:22:47,031 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:22:47,031 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:23:06,390 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 20:23:32,134 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 20:23:40,937 INFO c.z.c.s.d.MessageHistoryDAO: Saved message!!
+2021-03-07 20:23:40,937 INFO c.z.c.s.s.MessageService: Saved!!
+2021-03-07 20:23:40,938 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@2b31182e
+2021-03-07 20:23:40,943 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@756181b4
+2021-03-07 20:23:46,380 INFO c.z.c.s.d.MessageHistoryDAO: Saved message!!
+2021-03-07 20:23:46,381 INFO c.z.c.s.s.MessageService: Saved!!
+2021-03-07 20:23:46,417 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@2b31182e
+2021-03-07 20:23:46,418 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@756181b4
+2021-03-07 20:23:57,898 ERROR c.z.c.s.h.MessageHandler: java.lang.String cannot be cast to com.zitga.chat.server.model.MessageModel
+java.lang.ClassCastException: java.lang.String cannot be cast to com.zitga.chat.server.model.MessageModel
+	at com.zitga.chat.server.handler.MessageHandler.handle(MessageHandler.java:38) ~[classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.executeHandle(AuthorizedHandler.java:18) [classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.handle(AuthorizedHandler.java:14) [classes/:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:69) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:17) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.AbstractDispatcher.channelRead(AbstractDispatcher.java:30) [zitga-core.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2021-03-07 20:23:57,912 ERROR c.z.c.s.h.MessageHandler: [AUTHORIZED] FATAL error with, opCode=29
+2021-03-07 20:24:55,550 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:24:55,551 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 20:25:21,801 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:25:21,820 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:25:21,820 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:25:22,648 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 20:25:23,970 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 20:25:24,171 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 20:25:24,206 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:25:24,273 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 20:25:24,847 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:25:24,849 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 20:25:24,859 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:25:24,860 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:25:24,861 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:25:28,185 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 20:25:28,188 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:25:28,189 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:25:34,156 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 20:25:34,631 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 20:25:42,127 ERROR c.z.c.s.h.MessageHandler: java.lang.String cannot be cast to com.zitga.chat.server.model.MessageModel
+java.lang.ClassCastException: java.lang.String cannot be cast to com.zitga.chat.server.model.MessageModel
+	at com.zitga.chat.server.handler.MessageHandler.handle(MessageHandler.java:38) ~[classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.executeHandle(AuthorizedHandler.java:18) [classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.handle(AuthorizedHandler.java:14) [classes/:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:69) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:17) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.AbstractDispatcher.channelRead(AbstractDispatcher.java:30) [zitga-core.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2021-03-07 20:25:42,139 ERROR c.z.c.s.h.MessageHandler: [AUTHORIZED] FATAL error with, opCode=29
+2021-03-07 20:25:46,790 INFO c.z.c.s.d.MessageHistoryDAO: Saved message!!
+2021-03-07 20:25:46,791 INFO c.z.c.s.s.MessageService: Saved!!
+2021-03-07 20:25:46,791 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@55aa30c2
+2021-03-07 20:25:46,798 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@cec99c7
+2021-03-07 20:26:50,561 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:26:50,563 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 20:27:00,506 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:27:00,513 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:27:00,513 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:27:00,899 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 20:27:01,328 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 20:27:01,379 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 20:27:01,383 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:27:01,404 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 20:27:01,707 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:27:01,707 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 20:27:01,707 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:27:01,708 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:27:01,712 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:27:02,381 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 20:27:02,383 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:27:02,383 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:27:21,443 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 20:27:22,767 INFO c.z.c.s.d.MessageHistoryDAO: Saved message!!
+2021-03-07 20:27:22,767 INFO c.z.c.s.s.MessageService: Saved!!
+2021-03-07 20:27:22,768 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@64f5d9c1
+2021-03-07 20:27:26,469 ERROR c.z.c.s.h.MessageHandler: java.lang.String cannot be cast to com.zitga.chat.server.model.MessageModel
+java.lang.ClassCastException: java.lang.String cannot be cast to com.zitga.chat.server.model.MessageModel
+	at com.zitga.chat.server.handler.MessageHandler.handle(MessageHandler.java:39) ~[classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.executeHandle(AuthorizedHandler.java:18) [classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.handle(AuthorizedHandler.java:14) [classes/:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:69) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:17) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.AbstractDispatcher.channelRead(AbstractDispatcher.java:30) [zitga-core.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2021-03-07 20:27:26,480 ERROR c.z.c.s.h.MessageHandler: [AUTHORIZED] FATAL error with, opCode=29
+2021-03-07 20:28:14,563 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:28:14,564 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 20:28:25,080 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:28:25,091 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:28:25,091 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:28:25,603 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 20:28:26,150 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 20:28:26,212 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 20:28:26,219 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:28:26,239 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 20:28:26,695 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:28:26,696 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 20:28:26,697 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:28:26,698 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:28:26,703 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:28:27,369 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 20:28:27,373 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:28:27,373 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:28:42,821 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 20:29:08,120 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 20:29:12,386 INFO c.z.c.s.d.MessageHistoryDAO: Saved message!!
+2021-03-07 20:29:12,386 INFO c.z.c.s.s.MessageService: Saved!!
+2021-03-07 20:29:12,387 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@1cc6a90d
+2021-03-07 20:29:12,389 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@6f02248
+2021-03-07 20:29:23,238 INFO c.z.c.s.d.MessageHistoryDAO: Saved message!!
+2021-03-07 20:29:23,238 INFO c.z.c.s.s.MessageService: Saved!!
+2021-03-07 20:29:23,238 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@1cc6a90d
+2021-03-07 20:29:23,239 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@6f02248
+2021-03-07 20:29:28,620 ERROR c.z.c.s.h.MessageHandler: java.lang.String cannot be cast to com.zitga.chat.server.model.MessageModel
+java.lang.ClassCastException: java.lang.String cannot be cast to com.zitga.chat.server.model.MessageModel
+	at com.zitga.chat.server.handler.MessageHandler.handle(MessageHandler.java:37) ~[classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.executeHandle(AuthorizedHandler.java:18) [classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.handle(AuthorizedHandler.java:14) [classes/:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:69) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:17) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.AbstractDispatcher.channelRead(AbstractDispatcher.java:30) [zitga-core.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2021-03-07 20:29:28,633 ERROR c.z.c.s.h.MessageHandler: [AUTHORIZED] FATAL error with, opCode=29
+2021-03-07 20:29:37,495 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:29:37,496 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 20:39:48,684 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:39:48,695 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:39:48,696 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:39:49,302 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 20:39:50,178 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 20:39:50,275 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 20:39:50,281 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:39:50,450 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 20:39:51,298 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 20:39:51,298 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:39:51,299 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:39:51,299 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:39:51,304 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:39:52,728 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 20:39:52,731 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:39:52,734 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:40:00,195 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 20:40:18,910 ERROR c.z.c.s.h.MessageHandler: java.lang.String cannot be cast to com.zitga.chat.server.model.MessageModel
+java.lang.ClassCastException: java.lang.String cannot be cast to com.zitga.chat.server.model.MessageModel
+	at com.zitga.chat.server.handler.MessageHandler.handle(MessageHandler.java:38) ~[classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.executeHandle(AuthorizedHandler.java:18) [classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.handle(AuthorizedHandler.java:14) [classes/:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:69) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:17) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.AbstractDispatcher.channelRead(AbstractDispatcher.java:30) [zitga-core.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2021-03-07 20:40:18,923 ERROR c.z.c.s.h.MessageHandler: [AUTHORIZED] FATAL error with, opCode=29
+2021-03-07 20:40:46,936 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:40:46,937 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 20:40:57,106 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:40:57,122 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:40:57,127 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:40:57,736 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 20:40:58,361 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 20:40:58,425 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 20:40:58,430 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:40:58,456 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 20:40:58,944 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:40:58,945 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 20:40:58,945 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:40:58,945 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:40:58,957 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:41:00,651 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 20:41:00,652 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:41:00,653 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:41:06,622 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 20:43:14,640 ERROR c.z.c.s.h.MessageHandler: java.lang.String cannot be cast to com.zitga.chat.server.model.MessageModel
+java.lang.ClassCastException: java.lang.String cannot be cast to com.zitga.chat.server.model.MessageModel
+	at com.zitga.chat.server.handler.MessageHandler.handle(MessageHandler.java:39) ~[classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.executeHandle(AuthorizedHandler.java:18) [classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.handle(AuthorizedHandler.java:14) [classes/:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:69) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:17) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.AbstractDispatcher.channelRead(AbstractDispatcher.java:30) [zitga-core.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2021-03-07 20:43:14,661 ERROR c.z.c.s.h.MessageHandler: [AUTHORIZED] FATAL error with, opCode=29
+2021-03-07 20:43:14,740 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:43:14,741 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 20:44:35,535 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:44:35,544 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:44:35,545 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:44:35,932 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 20:44:36,417 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 20:44:36,476 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 20:44:36,480 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:44:36,501 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 20:44:36,834 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 20:44:36,834 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:44:36,834 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:44:36,836 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:44:36,842 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:44:37,401 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 20:44:37,402 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:44:37,402 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:44:54,272 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 20:44:56,414 INFO c.z.c.s.d.MessageHistoryDAO: Saved message!!
+2021-03-07 20:44:56,414 INFO c.z.c.s.s.MessageService: Saved!!
+2021-03-07 20:44:56,415 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@a213501
+2021-03-07 20:44:59,595 INFO c.z.c.s.h.MessageHandler: /show100
+2021-03-07 20:44:59,597 INFO c.z.c.s.h.MessageHandler: 1
+2021-03-07 20:44:59,600 INFO c.z.c.s.h.MessageHandler: 2
+2021-03-07 20:44:59,602 INFO c.z.c.s.h.MessageHandler: Aloooooooooooo 
+2021-03-07 20:44:59,605 INFO c.z.c.s.h.MessageHandler: Hellloooooooo
+2021-03-07 20:44:59,607 INFO c.z.c.s.h.MessageHandler: Hi client
+2021-03-07 20:44:59,610 INFO c.z.c.s.h.MessageHandler: Hi client coppy
+2021-03-07 20:44:59,612 INFO c.z.c.s.h.MessageHandler: a
+2021-03-07 20:44:59,613 INFO c.z.c.s.h.MessageHandler: d
+2021-03-07 20:44:59,615 INFO c.z.c.s.h.MessageHandler: hehe
+2021-03-07 20:44:59,616 INFO c.z.c.s.h.MessageHandler: hello
+2021-03-07 20:44:59,617 INFO c.z.c.s.h.MessageHandler: hi
+2021-03-07 20:44:59,618 INFO c.z.c.s.h.MessageHandler: u
+2021-03-07 20:46:23,516 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:46:23,517 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 20:50:03,309 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:50:03,318 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:50:03,318 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:50:03,746 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 20:50:04,244 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 20:50:04,314 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 20:50:04,321 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:50:04,342 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 20:50:04,612 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:50:04,612 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 20:50:04,612 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:50:04,613 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:50:04,613 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:50:05,174 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 20:50:05,175 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:50:05,176 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:50:25,631 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 20:50:27,909 INFO c.z.c.s.h.MessageHandler: /show100
+2021-03-07 20:50:27,914 INFO c.z.c.s.h.MessageHandler: 1
+2021-03-07 20:50:27,915 INFO c.z.c.s.h.MessageHandler: 2
+2021-03-07 20:50:27,916 INFO c.z.c.s.h.MessageHandler: Aloooooooooooo 
+2021-03-07 20:50:27,916 INFO c.z.c.s.h.MessageHandler: Hellloooooooo
+2021-03-07 20:50:27,917 INFO c.z.c.s.h.MessageHandler: Hi client
+2021-03-07 20:50:27,917 INFO c.z.c.s.h.MessageHandler: Hi client coppy
+2021-03-07 20:50:27,918 INFO c.z.c.s.h.MessageHandler: a
+2021-03-07 20:50:27,918 INFO c.z.c.s.h.MessageHandler: d
+2021-03-07 20:50:27,919 INFO c.z.c.s.h.MessageHandler: hehe
+2021-03-07 20:50:27,919 INFO c.z.c.s.h.MessageHandler: hello
+2021-03-07 20:50:27,920 INFO c.z.c.s.h.MessageHandler: hi
+2021-03-07 20:50:27,921 INFO c.z.c.s.h.MessageHandler: u
+2021-03-07 20:50:35,401 ERROR c.z.c.d.AbstractDispatcher: Exception caught at channel=[id: 0xd8ee0da7, L:/127.0.0.1:8101 - R:/127.0.0.1:58694]
+2021-03-07 20:50:35,401 ERROR c.z.c.d.AbstractDispatcher: An existing connection was forcibly closed by the remote host
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_191]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2021-03-07 20:50:37,542 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:50:37,543 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 20:50:56,963 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:50:56,969 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:50:56,970 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:50:59,097 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 20:50:59,736 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 20:50:59,794 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 20:50:59,802 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:50:59,849 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 20:51:00,294 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:51:00,295 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 20:51:00,295 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:51:00,295 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:51:00,305 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:51:01,062 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 20:51:01,063 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:51:01,064 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:51:46,454 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 20:51:47,643 INFO c.z.c.s.h.MessageHandler: /show100
+2021-03-07 20:51:47,649 INFO c.z.c.s.h.MessageHandler: 1
+2021-03-07 20:51:47,650 INFO c.z.c.s.h.MessageHandler: 2
+2021-03-07 20:51:47,651 INFO c.z.c.s.h.MessageHandler: Aloooooooooooo 
+2021-03-07 20:51:47,651 INFO c.z.c.s.h.MessageHandler: Hellloooooooo
+2021-03-07 20:51:47,652 INFO c.z.c.s.h.MessageHandler: Hi client
+2021-03-07 20:51:47,652 INFO c.z.c.s.h.MessageHandler: Hi client coppy
+2021-03-07 20:51:47,653 INFO c.z.c.s.h.MessageHandler: a
+2021-03-07 20:51:47,653 INFO c.z.c.s.h.MessageHandler: d
+2021-03-07 20:51:47,654 INFO c.z.c.s.h.MessageHandler: hehe
+2021-03-07 20:51:47,655 INFO c.z.c.s.h.MessageHandler: hello
+2021-03-07 20:51:47,655 INFO c.z.c.s.h.MessageHandler: hi
+2021-03-07 20:51:47,656 INFO c.z.c.s.h.MessageHandler: u
+2021-03-07 20:55:34,260 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:55:34,286 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 20:55:54,179 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:55:54,191 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:55:54,191 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:55:55,115 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 20:55:55,758 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 20:55:55,826 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 20:55:55,832 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:55:55,859 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 20:55:56,446 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:55:56,446 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 20:55:56,447 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:55:56,447 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:55:56,451 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:55:57,449 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 20:55:57,451 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:55:57,452 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:56:22,974 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 20:56:28,283 INFO c.z.c.s.h.MessageHandler: /show100
+2021-03-07 20:56:28,290 INFO c.z.c.s.h.MessageHandler: 1
+2021-03-07 20:56:28,291 INFO c.z.c.s.h.MessageHandler: 2
+2021-03-07 20:56:28,292 INFO c.z.c.s.h.MessageHandler: Aloooooooooooo 
+2021-03-07 20:56:28,292 INFO c.z.c.s.h.MessageHandler: Hellloooooooo
+2021-03-07 20:56:28,293 INFO c.z.c.s.h.MessageHandler: Hi client
+2021-03-07 20:56:28,293 INFO c.z.c.s.h.MessageHandler: Hi client coppy
+2021-03-07 20:56:28,294 INFO c.z.c.s.h.MessageHandler: a
+2021-03-07 20:56:28,295 INFO c.z.c.s.h.MessageHandler: d
+2021-03-07 20:56:28,295 INFO c.z.c.s.h.MessageHandler: hehe
+2021-03-07 20:56:28,296 INFO c.z.c.s.h.MessageHandler: hello
+2021-03-07 20:56:28,296 INFO c.z.c.s.h.MessageHandler: hi
+2021-03-07 20:56:28,297 INFO c.z.c.s.h.MessageHandler: u
+2021-03-07 20:56:44,810 ERROR c.z.c.d.AbstractDispatcher: Exception caught at channel=[id: 0xca8045a6, L:/127.0.0.1:8101 - R:/127.0.0.1:58871]
+2021-03-07 20:56:44,810 ERROR c.z.c.d.AbstractDispatcher: An existing connection was forcibly closed by the remote host
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_191]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2021-03-07 20:57:01,090 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:57:01,091 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 20:59:51,588 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:59:51,598 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:59:51,599 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:59:51,995 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 20:59:52,898 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 20:59:52,982 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 20:59:52,987 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:59:53,009 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 20:59:53,198 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:59:53,198 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 20:59:53,198 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:59:53,199 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:59:53,203 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:59:53,778 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 20:59:53,780 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:59:53,780 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:00:08,857 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 21:00:17,467 ERROR c.z.c.s.h.MessageHandler: No usable constructor for com.zitga.chat.server.model.MessageModel
+org.mongodb.morphia.mapping.MappingException: No usable constructor for com.zitga.chat.server.model.MessageModel
+	at org.mongodb.morphia.mapping.DefaultCreator.createInstance(DefaultCreator.java:81) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.mapping.DefaultCreator.createInstance(DefaultCreator.java:91) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.mapping.Mapper.fromDBObject(Mapper.java:192) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.query.MorphiaIterator.convertItem(MorphiaIterator.java:134) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.query.MorphiaIterator.processItem(MorphiaIterator.java:146) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.query.MorphiaIterator.next(MorphiaIterator.java:117) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.query.QueryImpl.asList(QueryImpl.java:147) ~[zitga-morphia-revised.jar:?]
+	at com.zitga.chat.server.dao.MessageHistoryDAO.findAll(MessageHistoryDAO.java:26) ~[classes/:?]
+	at com.zitga.chat.server.service.MessageService.findAllService(MessageService.java:25) ~[classes/:?]
+	at com.zitga.chat.server.handler.MessageHandler.handle(MessageHandler.java:37) ~[classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.executeHandle(AuthorizedHandler.java:18) [classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.handle(AuthorizedHandler.java:14) [classes/:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:69) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:17) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.AbstractDispatcher.channelRead(AbstractDispatcher.java:30) [zitga-core.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.mongodb.morphia.mapping.MappingException: No usable constructor for com.zitga.chat.server.model.MessageModel
+	at org.mongodb.morphia.mapping.DefaultCreator.getNoArgsConstructor(DefaultCreator.java:53) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.mapping.DefaultCreator.createInstance(DefaultCreator.java:72) ~[zitga-morphia-revised.jar:?]
+	... 39 more
+Caused by: java.lang.NoSuchMethodException: com.zitga.chat.server.model.MessageModel.<init>()
+	at java.lang.Class.getConstructor0(Class.java:3082) ~[?:1.8.0_191]
+	at java.lang.Class.getDeclaredConstructor(Class.java:2178) ~[?:1.8.0_191]
+	at org.mongodb.morphia.mapping.DefaultCreator.getNoArgsConstructor(DefaultCreator.java:49) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.mapping.DefaultCreator.createInstance(DefaultCreator.java:72) ~[zitga-morphia-revised.jar:?]
+	... 39 more
+2021-03-07 21:00:17,479 ERROR c.z.c.s.h.MessageHandler: [AUTHORIZED] FATAL error with, opCode=29
+2021-03-07 21:00:41,051 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:00:41,052 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 21:14:08,117 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 21:14:08,125 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:14:08,125 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 21:14:08,783 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 21:14:09,750 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 21:14:09,837 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 21:14:09,841 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 21:14:09,867 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 21:14:10,226 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 21:14:10,227 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 21:14:10,227 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 21:14:10,227 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 21:14:10,232 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 21:14:10,877 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 21:14:10,883 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 21:14:10,885 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:14:26,501 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 21:14:40,962 INFO c.z.c.s.d.MessageHistoryDAO: Saved message!!
+2021-03-07 21:14:40,963 INFO c.z.c.s.s.MessageService: Saved!!
+2021-03-07 21:14:40,963 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@1f19b8f5
+2021-03-07 21:15:12,101 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:15:12,102 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 21:16:40,868 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 21:16:40,876 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:16:40,877 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 21:16:41,427 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 21:16:41,916 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 21:16:41,981 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 21:16:41,986 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 21:16:42,036 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 21:16:42,386 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 21:16:42,387 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 21:16:42,387 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 21:16:42,387 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 21:16:42,394 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 21:16:43,519 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 21:16:43,520 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 21:16:43,520 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:16:52,131 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 21:17:23,970 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:17:23,971 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 21:17:57,948 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 21:17:57,957 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:17:57,957 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 21:17:58,568 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 21:17:59,575 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 21:17:59,619 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 21:17:59,624 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 21:17:59,642 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 21:17:59,923 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 21:17:59,923 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 21:17:59,923 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 21:17:59,923 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 21:17:59,927 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 21:18:00,763 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 21:18:00,765 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 21:18:00,765 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:18:08,154 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 21:18:13,044 INFO c.z.c.s.d.MessageHistoryDAO: Saved message!!
+2021-03-07 21:18:13,045 INFO c.z.c.s.s.MessageService: Saved!!
+2021-03-07 21:18:13,045 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@27b6ecc9
+2021-03-07 21:18:24,503 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:18:24,504 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 21:30:01,730 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 21:30:01,738 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:30:01,738 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 21:30:02,778 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 21:30:03,191 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 21:30:03,287 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 21:30:03,291 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 21:30:03,314 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 21:30:03,562 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 21:30:03,563 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 21:30:03,563 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 21:30:03,563 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 21:30:03,566 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 21:30:04,211 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 21:30:04,213 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 21:30:04,213 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:30:14,968 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 21:30:17,462 ERROR c.z.c.s.h.MessageHandler: com.mongodb.BasicDBObject cannot be cast to java.lang.String
+java.lang.ClassCastException: com.mongodb.BasicDBObject cannot be cast to java.lang.String
+	at com.zitga.chat.server.handler.MessageHandler.handle(MessageHandler.java:39) ~[classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.executeHandle(AuthorizedHandler.java:18) [classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.handle(AuthorizedHandler.java:14) [classes/:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:69) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:17) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.AbstractDispatcher.channelRead(AbstractDispatcher.java:30) [zitga-core.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2021-03-07 21:30:18,489 ERROR c.z.c.s.h.MessageHandler: [AUTHORIZED] FATAL error with, opCode=29
+2021-03-07 21:31:32,819 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:31:32,820 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 21:31:40,509 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 21:31:40,523 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:31:40,524 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 21:31:41,218 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 21:31:42,349 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 21:31:42,410 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 21:31:42,415 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 21:31:42,440 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 21:31:42,835 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 21:31:42,836 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 21:31:42,836 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 21:31:42,836 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 21:31:42,842 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 21:31:43,516 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 21:31:43,517 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 21:31:43,517 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:32:42,378 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 21:32:43,864 ERROR c.z.c.s.h.MessageHandler: com.mongodb.BasicDBObject cannot be cast to com.zitga.chat.server.model.MessageModel
+java.lang.ClassCastException: com.mongodb.BasicDBObject cannot be cast to com.zitga.chat.server.model.MessageModel
+	at com.zitga.chat.server.handler.MessageHandler.handle(MessageHandler.java:39) ~[classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.executeHandle(AuthorizedHandler.java:18) [classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.handle(AuthorizedHandler.java:14) [classes/:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:69) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:17) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.AbstractDispatcher.channelRead(AbstractDispatcher.java:30) [zitga-core.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2021-03-07 21:32:43,876 ERROR c.z.c.s.h.MessageHandler: [AUTHORIZED] FATAL error with, opCode=29
+2021-03-07 21:38:05,235 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:38:05,239 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 21:38:14,556 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 21:38:14,565 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:38:14,565 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 21:38:15,059 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 21:38:16,081 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 21:38:16,123 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 21:38:16,130 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 21:38:16,148 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 21:38:16,392 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 21:38:16,393 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 21:38:16,393 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 21:38:16,393 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 21:38:16,397 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 21:38:16,969 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 21:38:16,971 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 21:38:16,971 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:38:30,498 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 21:38:34,056 ERROR c.z.c.s.h.MessageHandler: No usable constructor for com.zitga.chat.server.model.MessageModel
+org.mongodb.morphia.mapping.MappingException: No usable constructor for com.zitga.chat.server.model.MessageModel
+	at org.mongodb.morphia.mapping.DefaultCreator.createInstance(DefaultCreator.java:81) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.mapping.DefaultCreator.createInstance(DefaultCreator.java:91) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.mapping.Mapper.fromDBObject(Mapper.java:192) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.query.MorphiaIterator.convertItem(MorphiaIterator.java:134) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.query.MorphiaIterator.processItem(MorphiaIterator.java:146) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.query.MorphiaIterator.next(MorphiaIterator.java:117) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.query.QueryImpl.asList(QueryImpl.java:147) ~[zitga-morphia-revised.jar:?]
+	at com.zitga.chat.server.dao.MessageHistoryDAO.findAll(MessageHistoryDAO.java:26) ~[classes/:?]
+	at com.zitga.chat.server.service.MessageService.findAllService(MessageService.java:25) ~[classes/:?]
+	at com.zitga.chat.server.handler.MessageHandler.handle(MessageHandler.java:37) ~[classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.executeHandle(AuthorizedHandler.java:18) [classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.handle(AuthorizedHandler.java:14) [classes/:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:69) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:17) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.AbstractDispatcher.channelRead(AbstractDispatcher.java:30) [zitga-core.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.mongodb.morphia.mapping.MappingException: No usable constructor for com.zitga.chat.server.model.MessageModel
+	at org.mongodb.morphia.mapping.DefaultCreator.getNoArgsConstructor(DefaultCreator.java:53) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.mapping.DefaultCreator.createInstance(DefaultCreator.java:72) ~[zitga-morphia-revised.jar:?]
+	... 39 more
+Caused by: java.lang.NoSuchMethodException: com.zitga.chat.server.model.MessageModel.<init>()
+	at java.lang.Class.getConstructor0(Class.java:3082) ~[?:1.8.0_191]
+	at java.lang.Class.getDeclaredConstructor(Class.java:2178) ~[?:1.8.0_191]
+	at org.mongodb.morphia.mapping.DefaultCreator.getNoArgsConstructor(DefaultCreator.java:49) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.mapping.DefaultCreator.createInstance(DefaultCreator.java:72) ~[zitga-morphia-revised.jar:?]
+	... 39 more
+2021-03-07 21:38:34,067 ERROR c.z.c.s.h.MessageHandler: [AUTHORIZED] FATAL error with, opCode=29
+2021-03-07 21:40:47,289 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:40:47,291 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 21:41:22,962 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 21:41:22,983 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:41:22,984 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 21:41:23,700 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 21:41:24,157 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 21:41:24,224 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 21:41:24,240 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 21:41:24,264 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 21:41:24,790 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 21:41:24,790 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 21:41:24,791 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 21:41:24,791 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 21:41:24,795 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 21:41:25,721 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 21:41:25,722 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 21:41:25,723 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:41:34,750 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 21:41:39,413 INFO c.z.c.s.d.MessageHistoryDAO: Saved message!!
+2021-03-07 21:41:39,413 INFO c.z.c.s.s.MessageService: Saved!!
+2021-03-07 21:41:39,414 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@1c1687e3
+2021-03-07 21:41:44,227 ERROR c.z.c.s.h.MessageHandler: No usable constructor for com.zitga.chat.server.model.MessageModel
+org.mongodb.morphia.mapping.MappingException: No usable constructor for com.zitga.chat.server.model.MessageModel
+	at org.mongodb.morphia.mapping.DefaultCreator.createInstance(DefaultCreator.java:81) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.mapping.DefaultCreator.createInstance(DefaultCreator.java:91) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.mapping.Mapper.fromDBObject(Mapper.java:192) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.query.MorphiaIterator.convertItem(MorphiaIterator.java:134) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.query.MorphiaIterator.processItem(MorphiaIterator.java:146) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.query.MorphiaIterator.next(MorphiaIterator.java:117) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.query.QueryImpl.asList(QueryImpl.java:147) ~[zitga-morphia-revised.jar:?]
+	at com.zitga.chat.server.dao.MessageHistoryDAO.findAll(MessageHistoryDAO.java:26) ~[classes/:?]
+	at com.zitga.chat.server.service.MessageService.findAllService(MessageService.java:25) ~[classes/:?]
+	at com.zitga.chat.server.handler.MessageHandler.handle(MessageHandler.java:37) ~[classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.executeHandle(AuthorizedHandler.java:18) [classes/:?]
+	at com.zitga.chat.base.handler.AuthorizedHandler.handle(AuthorizedHandler.java:14) [classes/:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:69) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.socket.SocketDispatcher.dispatch(SocketDispatcher.java:17) [zitga-core.jar:?]
+	at com.zitga.core.dispatcher.AbstractDispatcher.channelRead(AbstractDispatcher.java:30) [zitga-core.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.mongodb.morphia.mapping.MappingException: No usable constructor for com.zitga.chat.server.model.MessageModel
+	at org.mongodb.morphia.mapping.DefaultCreator.getNoArgsConstructor(DefaultCreator.java:53) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.mapping.DefaultCreator.createInstance(DefaultCreator.java:72) ~[zitga-morphia-revised.jar:?]
+	... 39 more
+Caused by: java.lang.NoSuchMethodException: com.zitga.chat.server.model.MessageModel.<init>()
+	at java.lang.Class.getConstructor0(Class.java:3082) ~[?:1.8.0_191]
+	at java.lang.Class.getDeclaredConstructor(Class.java:2178) ~[?:1.8.0_191]
+	at org.mongodb.morphia.mapping.DefaultCreator.getNoArgsConstructor(DefaultCreator.java:49) ~[zitga-morphia-revised.jar:?]
+	at org.mongodb.morphia.mapping.DefaultCreator.createInstance(DefaultCreator.java:72) ~[zitga-morphia-revised.jar:?]
+	... 39 more
+2021-03-07 21:41:44,241 ERROR c.z.c.s.h.MessageHandler: [AUTHORIZED] FATAL error with, opCode=29
+2021-03-07 21:42:17,711 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:42:17,712 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 21:52:48,101 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 21:52:48,115 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:52:48,116 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 21:52:49,390 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 21:52:49,757 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 21:52:49,808 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 21:52:49,811 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 21:52:49,827 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 21:52:50,089 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 21:52:50,089 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 21:52:50,089 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 21:52:50,092 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 21:52:50,098 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 21:52:50,660 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 21:52:50,662 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 21:52:50,662 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:53:05,634 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 21:56:30,126 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:56:43,130 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 21:56:43,139 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:56:43,139 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 21:56:43,559 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 21:56:44,116 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 21:56:44,189 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 21:56:44,193 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 21:56:44,222 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 21:56:44,602 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 21:56:44,603 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 21:56:44,603 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 21:56:44,603 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 21:56:44,608 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 21:56:49,281 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 21:56:49,282 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 21:56:49,283 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:57:10,370 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 21:57:12,637 INFO c.z.c.s.d.MessageHistoryDAO: Saved message!!
+2021-03-07 21:57:12,637 INFO c.z.c.s.s.MessageService: Saved!!
+2021-03-07 21:57:12,638 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@2b8e3ed0
+2021-03-07 21:59:27,224 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:59:27,225 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 21:59:37,483 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 21:59:37,493 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:59:37,496 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 21:59:38,200 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 21:59:38,906 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 21:59:38,976 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 21:59:38,986 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 21:59:39,019 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 21:59:39,810 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 21:59:39,811 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 21:59:39,811 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 21:59:39,811 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 21:59:39,816 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 21:59:40,796 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 21:59:40,798 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 21:59:40,798 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:59:50,235 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 21:59:54,104 INFO c.z.c.s.d.MessageHistoryDAO: Saved message!!
+2021-03-07 21:59:54,105 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@543b4708
+2021-03-07 22:00:17,007 INFO c.z.c.s.d.MessageHistoryDAO: Saved message!!
+2021-03-07 22:00:17,007 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@543b4708
+2021-03-07 22:03:15,382 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 22:03:15,384 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 22:03:26,666 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 22:03:26,678 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 22:03:26,680 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 22:03:27,047 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 22:03:27,531 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 22:03:27,611 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 22:03:27,618 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 22:03:27,644 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 22:03:28,044 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 22:03:28,044 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 22:03:28,045 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 22:03:28,045 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 22:03:28,049 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 22:03:28,820 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 22:03:28,822 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 22:03:28,822 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 22:03:44,775 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 22:03:50,533 INFO c.z.c.s.d.MessageHistoryDAO: Saved message!!
+2021-03-07 22:03:50,534 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@605836c2
+2021-03-07 22:08:54,620 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 22:08:54,623 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 22:09:37,348 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 22:09:37,355 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 22:09:37,355 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 22:09:37,990 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 22:09:38,965 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 22:09:39,083 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 22:09:39,088 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 22:09:39,107 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 22:09:39,382 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 22:09:39,382 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 22:09:39,383 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 22:09:39,383 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 22:09:39,387 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 22:09:40,160 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 22:09:40,164 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 22:09:40,165 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 22:09:57,305 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 22:10:06,250 INFO c.z.c.s.h.MessageHandler: Aloooooooooooo 
+2021-03-07 22:10:06,256 INFO c.z.c.s.h.MessageHandler: Hellloooooooo
+2021-03-07 22:10:06,256 INFO c.z.c.s.h.MessageHandler: Hi client coppy
+2021-03-07 22:10:06,257 INFO c.z.c.s.h.MessageHandler: Hi client
+2021-03-07 22:10:06,258 INFO c.z.c.s.h.MessageHandler: 1
+2021-03-07 22:10:06,258 INFO c.z.c.s.h.MessageHandler: 2
+2021-03-07 22:10:06,259 INFO c.z.c.s.h.MessageHandler: /show100
+2021-03-07 22:10:06,260 INFO c.z.c.s.h.MessageHandler: /Show
+2021-03-07 22:10:06,260 INFO c.z.c.s.h.MessageHandler: Show100
+2021-03-07 22:10:06,261 INFO c.z.c.s.h.MessageHandler: 2
+2021-03-07 22:11:26,926 INFO c.z.c.s.d.MessageHistoryDAO: Saved message!!
+2021-03-07 22:11:26,927 INFO c.z.c.s.h.MessageHandler: com.zitga.core.handler.socket.support.context.Peer@7e105370
+2021-03-07 22:11:33,034 INFO c.z.c.s.h.MessageHandler: Aloooooooooooo 
+2021-03-07 22:11:33,035 INFO c.z.c.s.h.MessageHandler: Hellloooooooo
+2021-03-07 22:11:33,037 INFO c.z.c.s.h.MessageHandler: Hi client coppy
+2021-03-07 22:11:33,038 INFO c.z.c.s.h.MessageHandler: Hi client
+2021-03-07 22:11:33,039 INFO c.z.c.s.h.MessageHandler: 1
+2021-03-07 22:11:33,040 INFO c.z.c.s.h.MessageHandler: 2
+2021-03-07 22:11:33,041 INFO c.z.c.s.h.MessageHandler: /show100
+2021-03-07 22:11:33,055 INFO c.z.c.s.h.MessageHandler: /Show
+2021-03-07 22:11:33,055 INFO c.z.c.s.h.MessageHandler: Show100
+2021-03-07 22:11:33,056 INFO c.z.c.s.h.MessageHandler: 2
+2021-03-07 22:12:10,258 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 22:12:10,260 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 22:12:23,715 INFO c.z.c.s.MainServer: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 22:12:23,727 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 22:12:23,728 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 22:12:24,144 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 14 components
+2021-03-07 22:12:24,671 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=2, workerThreadNumber=2, schedulerThreadNumber=2
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8101
+
+2021-03-07 22:12:24,835 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.server.config.DbConfig with 
+	uri='mongodb+srv://m001-student:qSzncFgdiaVKP4KA@clusterdemo.g6tly.mongodb.net/ChatServer?retryWrites=true&w=majority'
+2021-03-07 22:12:24,844 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 22:12:24,869 INFO c.z.c.s.s.MessageService: Initializing MessageService ...
+2021-03-07 22:12:25,217 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 22:12:25,217 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 29 to com.zitga.chat.server.handler.MessageHandler
+2021-03-07 22:12:25,217 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 22:12:25,218 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 22:12:25,224 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 22:12:25,779 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8101
+2021-03-07 22:12:25,780 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 22:12:25,781 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 22:12:35,504 INFO c.z.c.s.d.ClientDAO: Saved client!!
+2021-03-07 22:12:37,991 INFO c.z.c.s.h.MessageHandler: hehe
+2021-03-07 22:12:37,998 INFO c.z.c.s.h.MessageHandler: d
+2021-03-07 22:12:38,003 INFO c.z.c.s.h.MessageHandler: Aloooooooooooo 
+2021-03-07 22:12:38,004 INFO c.z.c.s.h.MessageHandler: Hellloooooooo
+2021-03-07 22:12:38,004 INFO c.z.c.s.h.MessageHandler: Hi client coppy
+2021-03-07 22:12:38,005 INFO c.z.c.s.h.MessageHandler: Hi client
+2021-03-07 22:12:38,005 INFO c.z.c.s.h.MessageHandler: hello
+2021-03-07 22:12:38,006 INFO c.z.c.s.h.MessageHandler: u
+2021-03-07 22:12:38,006 INFO c.z.c.s.h.MessageHandler: hi
+2021-03-07 22:12:38,007 INFO c.z.c.s.h.MessageHandler: a
+2021-03-07 22:12:38,008 INFO c.z.c.s.h.MessageHandler: 1
+2021-03-07 22:12:38,008 INFO c.z.c.s.h.MessageHandler: 2
+2021-03-07 22:12:38,009 INFO c.z.c.s.h.MessageHandler: /show100
+2021-03-07 22:12:38,009 INFO c.z.c.s.h.MessageHandler: a
+2021-03-07 22:12:38,010 INFO c.z.c.s.h.MessageHandler: s
+2021-03-07 22:12:38,011 INFO c.z.c.s.h.MessageHandler: hi
+2021-03-07 22:12:38,011 INFO c.z.c.s.h.MessageHandler: a
+2021-03-07 22:12:38,012 INFO c.z.c.s.h.MessageHandler: /Show
+2021-03-07 22:12:38,012 INFO c.z.c.s.h.MessageHandler: Show100
+2021-03-07 22:12:38,013 INFO c.z.c.s.h.MessageHandler: 2
+2021-03-07 22:12:38,014 INFO c.z.c.s.h.MessageHandler: hok thanks
+2021-03-07 22:12:49,284 ERROR c.z.c.d.AbstractDispatcher: Exception caught at channel=[id: 0xbfde54da, L:/127.0.0.1:8101 - R:/127.0.0.1:60783]
+2021-03-07 22:12:49,284 ERROR c.z.c.d.AbstractDispatcher: An existing connection was forcibly closed by the remote host
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_191]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2021-03-07 22:12:54,687 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 22:12:54,688 INFO c.z.c.ServerBootstrap: Server stopping...

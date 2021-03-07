@@ -36,6 +36,14 @@ public class MessageModel {
         dateTime = TimeUtils.getCurrentTimeInGMT();
     }
 
+    public MessageModel(ObjectId id, String senderPerson, String receiverPerson, Date dateTime, String message) {
+        this.id = id;
+        this.senderPerson = senderPerson;
+        this.receiverPerson = receiverPerson;
+        this.dateTime = dateTime;
+        this.message = message;
+    }
+
     public String getSenderPerson() {
         return senderPerson;
     }

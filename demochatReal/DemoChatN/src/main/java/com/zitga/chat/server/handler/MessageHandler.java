@@ -15,6 +15,8 @@ import io.netty.buffer.ByteBuf;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.List;
+
 @SocketHandler(OpCode.SERVER_MESSAGE_RECEIVED)
 public class MessageHandler extends AuthorizedHandler {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
@@ -29,22 +31,35 @@ public class MessageHandler extends AuthorizedHandler {
 
         String message = SerializeHelper.readString(in);
 
-        MessageModel messageModel = new MessageModel(context.getPeer().getId(), "all", message);
-        messageService.messageSaveService(messageModel);
 
+        if (message.equals("/Show100")) {
 
-        ByteBuf out = SocketUtils.createByteBuf(opCode);
-        SerializeHelper.writeString(out, message);
+            List<String> messages = messageService.findAllService();
 
-        for (Peer peer : connectionService.peer) {
-            logger.info(peer.toString());
+            for (String messagee : messages) {
+                logger.info(messagee);
+                ByteBuf out = SocketUtils.createByteBuf(opCode);
 
-            ByteBuf temp = out.copy();
-            peer.send(temp);
+                SerializeHelper.writeString(out, messagee);
+
+                context.getPeer().send(out);
+            }
+        } else {
+
+            MessageModel messageModel = new MessageModel(context.getPeer().getId(), "all", message);
+            messageService.messageSaveService(messageModel);
+
+            ByteBuf out = SocketUtils.createByteBuf(opCode);
+            SerializeHelper.writeString(out, message);
+
+            for (Peer peer : connectionService.peer) {
+                logger.info(peer.toString());
+                ByteBuf temp = out.copy();
+                peer.send(temp);
+            }
+            SocketUtils.release(out);
         }
 
-
-        SocketUtils.release(out);
 
     }
 }
