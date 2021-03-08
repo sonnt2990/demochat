@@ -21,12 +21,18 @@ public class MessageService implements Runnable{
     private void init() {
         logger.info("Initializing MessageService ...");
     }
-    public List<String> findAllService(){
+    public List<MessageModel> findAllService(){
         return messageHistoryDAO.findAll();
     }
 
     public MessageModel messageSaveService(MessageModel messageModel){
-        return messageHistoryDAO.messageSave(messageModel);
+        if(messageHistoryDAO.messageSave(messageModel)!=null){
+            logger.info("Saved!!");
+            return messageModel;
+        }else{
+            logger.info("failed");
+            return null;
+        }
     }
     @Override
     public void run() {
