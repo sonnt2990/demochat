@@ -1,15 +1,10 @@
 package com.zitga.chat.client;
 
-import com.zitga.bean.annotation.BeanField;
+import com.zitga.chat.client.service.ServiceController;
 import org.apache.logging.log4j.core.config.Configurator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.impl.StaticLoggerBinder;
-
-import com.zitga.core.ServerBootstrap;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 
 public class MainClient {
 
@@ -20,13 +15,13 @@ public class MainClient {
 			final StaticLoggerBinder binder = StaticLoggerBinder.getSingleton();
 			logger.info("[LOG] Binded LoggerFactory: {}", binder.getLoggerFactoryClassStr());
 
-			ServerBootstrap.start();
+			Bootstrap.start();
 			ServiceController.instance().init();
 
 
 		} catch (Exception e) {
 
-			ServerBootstrap.stop();
+			Bootstrap.stop();
 
 			logger.error(e.getMessage(), e);
 			throw new RuntimeException(e);

@@ -2055,3 +2055,1012 @@ NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=
 2021-03-04 18:17:12,197 ERROR c.z.c.c.MasterConnectorService: [MASTER] Still disconnected to 127.0.0.1:8101
 2021-03-04 18:17:13,198 ERROR c.z.c.c.MasterConnectorService: [MASTER] Still disconnected to 127.0.0.1:8101
 2021-03-04 18:17:14,199 ERROR c.z.c.c.MasterConnectorService: [MASTER] Still disconnected to 127.0.0.1:8101
+2021-03-07 20:15:04,152 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:15:04,218 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:15:04,219 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:15:04,854 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 20:15:05,642 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 20:15:05,645 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@2f4854d6
+2021-03-07 20:15:05,660 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:15:05,691 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 20:15:05,696 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 20:15:05,699 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 20:15:05,773 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@42a9a63e
+2021-03-07 20:15:05,774 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 20:15:05,781 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 20:15:06,152 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 20:15:06,960 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 20:15:06,960 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 20:15:06,964 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 20:15:06,980 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 20:15:06,997 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:15:06,997 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:15:06,997 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:15:06,997 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:15:07,029 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 20:15:07,031 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:15:07,031 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:15:24,151 INFO c.z.c.c.MasterActionListener: Hi client coppy
+2021-03-07 20:15:31,069 INFO c.z.c.c.MasterActionListener: Hi client
+2021-03-07 20:16:08,298 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-07 20:16:08,298 WARN c.z.c.c.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-07 20:16:14,529 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:16:14,530 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 20:23:01,175 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:23:01,184 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:23:01,184 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:23:01,568 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 20:23:02,131 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 20:23:02,135 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@b91d8c4
+2021-03-07 20:23:02,142 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:23:02,165 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 20:23:02,168 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 20:23:02,169 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 20:23:02,203 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@42a9a63e
+2021-03-07 20:23:02,204 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 20:23:02,208 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 20:23:02,478 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 20:23:03,403 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 20:23:03,403 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 20:23:03,407 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 20:23:03,432 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 20:23:03,445 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:23:03,446 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:23:03,446 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:23:03,446 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:23:03,502 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 20:23:03,504 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:23:03,504 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:23:40,958 INFO c.z.c.c.MasterActionListener: hello
+2021-03-07 20:23:46,418 INFO c.z.c.c.MasterActionListener: u
+2021-03-07 20:24:55,612 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-07 20:24:55,613 WARN c.z.c.c.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-07 20:25:29,156 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:25:29,178 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:25:29,178 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:25:29,698 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 20:25:30,357 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 20:25:30,360 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@b91d8c4
+2021-03-07 20:25:30,366 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:25:30,426 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 20:25:30,431 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 20:25:30,433 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 20:25:30,468 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@42a9a63e
+2021-03-07 20:25:30,468 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 20:25:30,473 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 20:25:30,712 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 20:25:31,782 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 20:25:31,786 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 20:25:31,789 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 20:25:31,804 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 20:25:31,887 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:25:31,888 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:25:31,888 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:25:31,888 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:25:31,942 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 20:25:31,951 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:25:31,952 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:25:46,952 INFO c.z.c.c.MasterActionListener: hi
+2021-03-07 20:26:50,599 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-07 20:26:50,600 WARN c.z.c.c.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-07 20:28:29,611 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:28:29,620 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 20:28:37,838 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:28:37,846 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:28:37,846 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:28:38,090 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 20:28:38,422 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 20:28:38,426 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@2f4854d6
+2021-03-07 20:28:38,435 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:28:38,459 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 20:28:38,463 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 20:28:38,465 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 20:28:38,515 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@42a9a63e
+2021-03-07 20:28:38,515 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 20:28:38,520 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 20:28:38,871 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 20:28:39,700 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 20:28:39,700 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 20:28:39,703 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 20:28:39,722 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 20:28:39,732 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:28:39,733 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:28:39,733 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:28:39,733 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:28:39,762 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 20:28:39,765 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:28:39,766 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:29:12,501 INFO c.z.c.c.MasterActionListener: 1
+2021-03-07 20:29:23,239 INFO c.z.c.c.MasterActionListener: 2
+2021-03-07 20:29:37,534 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-07 20:29:37,534 WARN c.z.c.c.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-07 20:29:43,082 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:29:43,083 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 20:39:54,377 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:39:54,387 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:39:54,388 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:39:55,607 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 20:39:55,941 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 20:39:55,943 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@2f4854d6
+2021-03-07 20:39:55,950 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:39:55,964 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 20:39:55,969 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 20:39:55,970 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 20:39:55,997 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@42a9a63e
+2021-03-07 20:39:55,997 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 20:39:56,000 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 20:39:56,275 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 20:39:56,954 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 20:39:56,971 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 20:39:56,975 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 20:39:56,976 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 20:39:57,211 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:39:57,212 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:39:57,212 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:39:57,213 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:39:57,262 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 20:39:57,267 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:39:57,267 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:40:47,032 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-07 20:40:47,032 WARN c.z.c.c.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-07 20:40:50,954 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:40:50,957 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 20:41:00,551 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:41:00,563 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:41:00,563 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:41:01,230 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 20:41:01,893 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 20:41:01,896 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@2f4854d6
+2021-03-07 20:41:01,908 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:41:01,925 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 20:41:01,929 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 20:41:01,930 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 20:41:01,964 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@42a9a63e
+2021-03-07 20:41:01,964 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 20:41:01,969 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 20:41:02,243 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 20:41:03,406 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 20:41:03,406 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 20:41:03,412 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 20:41:03,440 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 20:41:03,462 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:41:03,462 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:41:03,462 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:41:03,462 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:41:03,516 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 20:41:03,519 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:41:03,519 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:43:14,792 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-07 20:43:14,792 WARN c.z.c.c.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-07 20:44:41,838 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:44:41,859 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 20:44:49,237 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:44:49,244 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:44:49,245 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:44:49,569 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 20:44:50,027 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 20:44:50,029 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@2f4854d6
+2021-03-07 20:44:50,033 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:44:50,044 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 20:44:50,048 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 20:44:50,049 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 20:44:50,079 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@42a9a63e
+2021-03-07 20:44:50,080 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 20:44:50,084 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 20:44:50,407 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 20:44:51,095 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 20:44:51,095 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 20:44:51,098 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 20:44:51,120 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 20:44:51,135 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:44:51,135 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:44:51,135 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:44:51,135 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:44:51,168 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 20:44:51,169 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:44:51,170 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:44:56,447 INFO c.z.c.c.MasterActionListener: /show100
+2021-03-07 20:44:59,598 INFO c.z.c.c.MasterActionListener: /show100
+2021-03-07 20:44:59,601 INFO c.z.c.c.MasterActionListener: 1
+2021-03-07 20:44:59,603 INFO c.z.c.c.MasterActionListener: 2
+2021-03-07 20:44:59,606 INFO c.z.c.c.MasterActionListener: Aloooooooooooo 
+2021-03-07 20:44:59,608 INFO c.z.c.c.MasterActionListener: Hellloooooooo
+2021-03-07 20:44:59,610 INFO c.z.c.c.MasterActionListener: Hi client
+2021-03-07 20:44:59,612 INFO c.z.c.c.MasterActionListener: Hi client coppy
+2021-03-07 20:44:59,613 INFO c.z.c.c.MasterActionListener: a
+2021-03-07 20:44:59,615 INFO c.z.c.c.MasterActionListener: d
+2021-03-07 20:44:59,616 INFO c.z.c.c.MasterActionListener: hehe
+2021-03-07 20:44:59,617 INFO c.z.c.c.MasterActionListener: hello
+2021-03-07 20:44:59,619 INFO c.z.c.c.MasterActionListener: hi
+2021-03-07 20:44:59,620 INFO c.z.c.c.MasterActionListener: u
+2021-03-07 20:46:23,532 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-07 20:46:23,533 WARN c.z.c.c.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-07 20:50:21,637 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:50:21,657 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:50:21,657 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:50:21,855 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 20:50:22,127 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 20:50:22,128 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@2f4854d6
+2021-03-07 20:50:22,132 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:50:22,141 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 20:50:22,143 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 20:50:22,145 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 20:50:22,162 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@42a9a63e
+2021-03-07 20:50:22,163 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 20:50:22,163 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 20:50:22,310 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 20:50:22,970 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 20:50:22,970 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 20:50:22,974 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 20:50:22,988 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 20:50:23,003 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:50:23,003 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:50:23,003 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:50:23,004 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:50:23,032 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 20:50:23,034 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:50:23,034 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:50:27,930 INFO c.z.c.c.MasterActionListener: /show100
+2021-03-07 20:50:27,931 INFO c.z.c.c.MasterActionListener: 1
+2021-03-07 20:50:27,931 INFO c.z.c.c.MasterActionListener: 2
+2021-03-07 20:50:27,931 INFO c.z.c.c.MasterActionListener: Aloooooooooooo 
+2021-03-07 20:50:27,932 INFO c.z.c.c.MasterActionListener: Hellloooooooo
+2021-03-07 20:50:27,932 INFO c.z.c.c.MasterActionListener: Hi client
+2021-03-07 20:50:27,932 INFO c.z.c.c.MasterActionListener: Hi client coppy
+2021-03-07 20:50:27,932 INFO c.z.c.c.MasterActionListener: a
+2021-03-07 20:50:27,932 INFO c.z.c.c.MasterActionListener: d
+2021-03-07 20:50:27,932 INFO c.z.c.c.MasterActionListener: hehe
+2021-03-07 20:50:27,933 INFO c.z.c.c.MasterActionListener: hello
+2021-03-07 20:50:27,933 INFO c.z.c.c.MasterActionListener: hi
+2021-03-07 20:50:27,933 INFO c.z.c.c.MasterActionListener: u
+2021-03-07 20:50:35,039 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:50:35,040 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 20:51:42,053 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:51:42,059 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:51:42,060 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:51:42,396 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 20:51:42,814 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 20:51:42,816 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@44a2b17b
+2021-03-07 20:51:42,821 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:51:42,834 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 20:51:42,836 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 20:51:42,837 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 20:51:42,863 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@42a9a63e
+2021-03-07 20:51:42,865 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 20:51:42,868 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 20:51:43,084 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 20:51:43,672 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 20:51:43,672 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 20:51:43,678 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 20:51:43,692 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 20:51:43,705 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:51:43,706 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:51:43,706 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:51:43,706 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:51:43,731 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 20:51:43,732 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:51:43,732 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:51:47,662 INFO c.z.c.c.MasterActionListener: /show100
+2021-03-07 20:51:47,663 INFO c.z.c.c.MasterActionListener: 1
+2021-03-07 20:51:47,663 INFO c.z.c.c.MasterActionListener: 2
+2021-03-07 20:51:47,664 INFO c.z.c.c.MasterActionListener: Aloooooooooooo 
+2021-03-07 20:51:47,664 INFO c.z.c.c.MasterActionListener: Hellloooooooo
+2021-03-07 20:51:47,664 INFO c.z.c.c.MasterActionListener: Hi client
+2021-03-07 20:51:47,665 INFO c.z.c.c.MasterActionListener: Hi client coppy
+2021-03-07 20:51:47,665 INFO c.z.c.c.MasterActionListener: a
+2021-03-07 20:51:47,665 INFO c.z.c.c.MasterActionListener: d
+2021-03-07 20:51:47,665 INFO c.z.c.c.MasterActionListener: hehe
+2021-03-07 20:51:47,665 INFO c.z.c.c.MasterActionListener: hello
+2021-03-07 20:51:47,665 INFO c.z.c.c.MasterActionListener: hi
+2021-03-07 20:51:47,666 INFO c.z.c.c.MasterActionListener: u
+2021-03-07 20:55:35,312 ERROR c.z.c.u.s.t.TcpClientHandler: An existing connection was forcibly closed by the remote host
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_191]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2021-03-07 20:55:35,486 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-07 20:55:35,489 WARN c.z.c.c.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-07 20:55:56,858 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:55:56,888 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 20:56:16,906 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 20:56:16,915 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:56:16,916 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 20:56:17,348 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 20:56:18,050 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 20:56:18,053 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@2f4854d6
+2021-03-07 20:56:18,064 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 20:56:18,081 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 20:56:18,085 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 20:56:18,086 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 20:56:18,119 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@67427b69
+2021-03-07 20:56:18,120 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 20:56:18,125 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 20:56:19,375 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 20:56:19,994 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 20:56:19,994 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 20:56:19,997 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 20:56:20,011 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 20:56:20,034 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 20:56:20,034 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 20:56:20,034 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 20:56:20,034 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 20:56:20,060 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 20:56:20,061 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 20:56:20,061 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:56:28,305 INFO c.z.c.c.MasterActionListener: /show100
+2021-03-07 20:56:28,305 INFO c.z.c.c.MasterActionListener: 1
+2021-03-07 20:56:28,305 INFO c.z.c.c.MasterActionListener: 2
+2021-03-07 20:56:28,306 INFO c.z.c.c.MasterActionListener: Aloooooooooooo 
+2021-03-07 20:56:28,306 INFO c.z.c.c.MasterActionListener: Hellloooooooo
+2021-03-07 20:56:28,306 INFO c.z.c.c.MasterActionListener: Hi client
+2021-03-07 20:56:28,306 INFO c.z.c.c.MasterActionListener: Hi client coppy
+2021-03-07 20:56:28,307 INFO c.z.c.c.MasterActionListener: a
+2021-03-07 20:56:28,307 INFO c.z.c.c.MasterActionListener: d
+2021-03-07 20:56:28,307 INFO c.z.c.c.MasterActionListener: hehe
+2021-03-07 20:56:28,307 INFO c.z.c.c.MasterActionListener: hello
+2021-03-07 20:56:28,308 INFO c.z.c.c.MasterActionListener: hi
+2021-03-07 20:56:28,308 INFO c.z.c.c.MasterActionListener: u
+2021-03-07 20:56:44,429 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 20:56:44,430 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 21:00:04,503 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 21:00:04,515 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:00:04,515 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 21:00:04,799 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 21:00:05,319 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 21:00:05,331 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@2f4854d6
+2021-03-07 21:00:05,335 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 21:00:05,347 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 21:00:05,350 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 21:00:05,351 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:00:05,378 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@42a9a63e
+2021-03-07 21:00:05,378 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 21:00:05,382 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 21:00:05,566 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 21:00:06,149 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:00:06,149 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 21:00:06,153 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 21:00:06,168 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 21:00:06,178 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 21:00:06,178 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 21:00:06,179 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 21:00:06,179 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 21:00:06,197 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 21:00:06,198 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 21:00:06,201 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:00:41,093 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-07 21:00:41,093 WARN c.z.c.c.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-07 21:14:09,917 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:14:09,986 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 21:14:21,810 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 21:14:21,825 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:14:21,825 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 21:14:22,200 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 21:14:22,613 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 21:14:22,616 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@2f4854d6
+2021-03-07 21:14:22,621 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 21:14:22,634 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 21:14:22,637 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 21:14:22,638 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:14:22,667 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@42a9a63e
+2021-03-07 21:14:22,668 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 21:14:22,672 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 21:14:23,191 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 21:14:23,756 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:14:23,756 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 21:14:23,766 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 21:14:23,782 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 21:14:23,798 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 21:14:23,798 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 21:14:23,798 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 21:14:23,798 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 21:14:23,824 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 21:14:23,826 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 21:14:23,826 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:14:40,981 INFO c.z.c.c.MasterActionListener: a
+2021-03-07 21:15:12,147 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-07 21:15:12,148 WARN c.z.c.c.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-07 21:15:15,799 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:16:47,581 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 21:16:47,589 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:16:47,589 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 21:16:47,882 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 21:16:48,373 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 21:16:48,377 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@2f4854d6
+2021-03-07 21:16:48,385 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 21:16:48,413 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 21:16:48,419 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 21:16:48,420 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:16:48,507 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@67427b69
+2021-03-07 21:16:48,507 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 21:16:48,515 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 21:16:48,839 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 21:16:49,413 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:16:49,413 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 21:16:49,416 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 21:16:49,431 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 21:16:49,446 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 21:16:49,446 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 21:16:49,446 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 21:16:49,447 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 21:16:49,475 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 21:16:49,476 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 21:16:49,476 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:17:24,014 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-07 21:17:24,014 WARN c.z.c.c.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-07 21:17:55,080 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:17:55,081 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 21:18:03,334 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 21:18:03,344 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:18:03,344 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 21:18:03,688 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 21:18:04,264 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 21:18:04,267 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@2f4854d6
+2021-03-07 21:18:04,279 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 21:18:04,317 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 21:18:04,326 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 21:18:04,330 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:18:04,394 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@42a9a63e
+2021-03-07 21:18:04,395 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 21:18:04,400 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 21:18:04,833 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 21:18:05,621 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 21:18:05,622 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:18:05,625 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 21:18:05,640 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 21:18:05,657 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 21:18:05,657 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 21:18:05,658 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 21:18:05,658 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 21:18:05,685 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 21:18:05,686 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 21:18:05,687 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:18:13,060 INFO c.z.c.c.MasterActionListener: s
+2021-03-07 21:18:24,533 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-07 21:18:24,533 WARN c.z.c.c.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-07 21:18:29,382 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:18:29,385 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 21:30:10,428 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 21:30:10,437 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:30:10,437 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 21:30:10,759 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 21:30:11,265 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 21:30:11,267 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@2f4854d6
+2021-03-07 21:30:11,275 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 21:30:11,295 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 21:30:11,301 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 21:30:11,305 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:30:11,401 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@42a9a63e
+2021-03-07 21:30:11,402 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 21:30:11,416 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 21:30:11,704 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 21:30:12,262 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:30:12,262 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 21:30:12,265 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 21:30:12,280 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 21:30:12,290 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 21:30:12,290 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 21:30:12,290 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 21:30:12,290 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 21:30:12,316 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 21:30:12,318 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 21:30:12,318 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:31:32,875 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-07 21:31:32,875 WARN c.z.c.c.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-07 21:32:30,156 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:32:30,157 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 21:32:37,567 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 21:32:37,575 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:32:37,575 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 21:32:37,960 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 21:32:38,387 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 21:32:38,392 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@2f4854d6
+2021-03-07 21:32:38,399 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 21:32:38,419 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 21:32:38,424 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 21:32:38,426 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:32:38,462 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@42a9a63e
+2021-03-07 21:32:38,462 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 21:32:38,466 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 21:32:38,713 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 21:32:39,456 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 21:32:39,456 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:32:39,460 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 21:32:39,475 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 21:32:39,483 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 21:32:39,483 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 21:32:39,484 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 21:32:39,484 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 21:32:39,547 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 21:32:39,549 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 21:32:39,549 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:38:05,723 ERROR c.z.c.u.s.t.TcpClientHandler: An existing connection was forcibly closed by the remote host
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_191]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2021-03-07 21:38:05,773 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-07 21:38:05,774 WARN c.z.c.c.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-07 21:38:11,214 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:38:11,219 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 21:38:23,736 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 21:38:23,745 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:38:23,745 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 21:38:24,340 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 21:38:25,141 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 21:38:25,148 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@2f4854d6
+2021-03-07 21:38:25,171 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 21:38:25,208 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 21:38:25,223 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 21:38:25,226 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:38:25,284 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@42a9a63e
+2021-03-07 21:38:25,285 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 21:38:25,289 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 21:38:27,148 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 21:38:27,750 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 21:38:27,750 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:38:27,756 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 21:38:27,770 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 21:38:27,786 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 21:38:27,787 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 21:38:27,787 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 21:38:27,787 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 21:38:27,815 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 21:38:27,816 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 21:38:27,817 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:40:47,763 ERROR c.z.c.u.s.t.TcpClientHandler: An existing connection was forcibly closed by the remote host
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_191]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2021-03-07 21:40:47,813 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-07 21:40:47,814 WARN c.z.c.c.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-07 21:41:17,681 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:41:17,686 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 21:41:29,533 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 21:41:29,542 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:41:29,542 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 21:41:29,997 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 21:41:31,079 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 21:41:31,080 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@2f4854d6
+2021-03-07 21:41:31,086 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 21:41:31,095 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 21:41:31,097 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 21:41:31,098 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:41:31,121 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@42a9a63e
+2021-03-07 21:41:31,121 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 21:41:31,123 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 21:41:31,319 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 21:41:31,905 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:41:31,905 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 21:41:31,908 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 21:41:31,927 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 21:41:31,943 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 21:41:31,943 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 21:41:31,943 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 21:41:31,943 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 21:41:31,971 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 21:41:31,972 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 21:41:31,973 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:41:39,432 INFO c.z.c.c.MasterActionListener: hi
+2021-03-07 21:42:17,752 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-07 21:42:17,753 WARN c.z.c.c.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-07 21:52:53,431 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:53:00,633 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 21:53:00,644 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:53:00,644 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 21:53:01,035 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 21:53:01,475 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 21:53:01,477 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@b91d8c4
+2021-03-07 21:53:01,483 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 21:53:01,498 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 21:53:01,502 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 21:53:01,503 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:53:01,532 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@42a9a63e
+2021-03-07 21:53:01,532 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 21:53:01,536 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 21:53:01,768 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 21:53:02,436 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:53:02,436 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 21:53:02,439 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 21:53:02,455 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 21:53:02,471 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 21:53:02,471 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 21:53:02,472 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 21:53:02,472 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 21:53:02,499 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 21:53:02,500 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 21:53:02,500 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:56:30,918 ERROR c.z.c.u.s.t.TcpClientHandler: An existing connection was forcibly closed by the remote host
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_191]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2021-03-07 21:56:31,033 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-07 21:56:31,035 WARN c.z.c.c.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-07 21:56:54,135 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:56:54,155 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 21:57:01,743 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 21:57:01,756 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:57:01,756 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 21:57:03,011 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 21:57:03,350 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@7a138fc5
+2021-03-07 21:57:03,357 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 21:57:03,362 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 21:57:03,373 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 21:57:03,376 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 21:57:03,377 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:57:03,406 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@2449cff7
+2021-03-07 21:57:03,406 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 21:57:03,409 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 21:57:03,627 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 21:57:04,171 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:57:04,171 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 21:57:04,173 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 21:57:04,187 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 21:57:04,201 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 21:57:04,201 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 21:57:04,201 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 21:57:04,202 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 21:57:04,219 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 21:57:04,220 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 21:57:04,220 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:57:12,666 INFO c.z.c.c.MasterActionListener: a
+2021-03-07 21:59:27,279 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-07 21:59:27,279 WARN c.z.c.c.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-07 21:59:45,663 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 21:59:45,677 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:59:45,678 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 21:59:46,111 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 21:59:46,797 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 21:59:46,799 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@b91d8c4
+2021-03-07 21:59:46,803 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 21:59:46,817 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 21:59:46,821 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 21:59:46,822 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:59:46,846 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@40bffbca
+2021-03-07 21:59:46,846 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 21:59:46,849 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 21:59:47,021 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 21:59:47,595 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 21:59:47,595 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 21:59:47,598 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 21:59:47,612 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 21:59:47,623 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 21:59:47,624 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 21:59:47,624 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 21:59:47,624 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 21:59:47,647 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 21:59:47,649 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 21:59:47,649 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 21:59:54,127 INFO c.z.c.c.MasterActionListener: /Show
+2021-03-07 22:00:17,008 INFO c.z.c.c.MasterActionListener: Show100
+2021-03-07 22:03:15,475 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-07 22:03:15,479 WARN c.z.c.c.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-07 22:03:33,504 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 22:03:33,512 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 22:03:40,239 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 22:03:40,246 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 22:03:40,247 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 22:03:40,528 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 22:03:40,911 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 22:03:40,914 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@2f4854d6
+2021-03-07 22:03:40,920 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 22:03:40,940 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 22:03:40,945 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 22:03:40,946 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 22:03:40,975 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@42a9a63e
+2021-03-07 22:03:40,975 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 22:03:40,979 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 22:03:41,279 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 22:03:41,968 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 22:03:41,980 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 22:03:41,985 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 22:03:41,990 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 22:03:42,015 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 22:03:42,016 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 22:03:42,016 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 22:03:42,016 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 22:03:42,055 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 22:03:42,057 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 22:03:42,057 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 22:03:50,570 INFO c.z.c.c.MasterActionListener: 2
+2021-03-07 22:08:55,092 ERROR c.z.c.u.s.t.TcpClientHandler: An existing connection was forcibly closed by the remote host
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_191]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2021-03-07 22:08:55,142 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-07 22:08:55,144 WARN c.z.c.c.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-07 22:09:37,516 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 22:09:37,522 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 22:09:49,692 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 22:09:49,700 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 22:09:49,701 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 22:09:50,164 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 22:09:50,848 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 22:09:50,850 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@2f4854d6
+2021-03-07 22:09:50,856 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 22:09:50,872 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 22:09:50,875 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 22:09:50,875 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 22:09:50,906 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@42a9a63e
+2021-03-07 22:09:50,906 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 22:09:50,909 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 22:09:51,209 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 22:09:52,139 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 22:09:52,139 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 22:09:52,141 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 22:09:52,157 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 22:09:52,180 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 22:09:52,181 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 22:09:52,181 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 22:09:52,181 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 22:09:52,211 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 22:09:52,213 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 22:09:52,213 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 22:10:06,268 INFO c.z.c.c.MasterActionListener: Aloooooooooooo 
+2021-03-07 22:10:06,269 INFO c.z.c.c.MasterActionListener: Hellloooooooo
+2021-03-07 22:10:06,272 INFO c.z.c.c.MasterActionListener: Hi client coppy
+2021-03-07 22:10:06,272 INFO c.z.c.c.MasterActionListener: Hi client
+2021-03-07 22:10:06,273 INFO c.z.c.c.MasterActionListener: 1
+2021-03-07 22:10:06,273 INFO c.z.c.c.MasterActionListener: 2
+2021-03-07 22:10:06,274 INFO c.z.c.c.MasterActionListener: /show100
+2021-03-07 22:10:06,274 INFO c.z.c.c.MasterActionListener: /Show
+2021-03-07 22:10:06,274 INFO c.z.c.c.MasterActionListener: Show100
+2021-03-07 22:10:06,274 INFO c.z.c.c.MasterActionListener: 2
+2021-03-07 22:11:26,928 INFO c.z.c.c.MasterActionListener: hok thanks
+2021-03-07 22:11:33,036 INFO c.z.c.c.MasterActionListener: Aloooooooooooo 
+2021-03-07 22:11:33,037 INFO c.z.c.c.MasterActionListener: Hellloooooooo
+2021-03-07 22:11:33,038 INFO c.z.c.c.MasterActionListener: Hi client coppy
+2021-03-07 22:11:33,039 INFO c.z.c.c.MasterActionListener: Hi client
+2021-03-07 22:11:33,040 INFO c.z.c.c.MasterActionListener: 1
+2021-03-07 22:11:33,041 INFO c.z.c.c.MasterActionListener: 2
+2021-03-07 22:11:33,055 INFO c.z.c.c.MasterActionListener: /show100
+2021-03-07 22:11:33,055 INFO c.z.c.c.MasterActionListener: /Show
+2021-03-07 22:11:33,056 INFO c.z.c.c.MasterActionListener: Show100
+2021-03-07 22:11:33,057 INFO c.z.c.c.MasterActionListener: 2
+2021-03-07 22:12:10,675 ERROR c.z.c.u.s.t.TcpClientHandler: An existing connection was forcibly closed by the remote host
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_191]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.56.Final.jar:4.1.56.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2021-03-07 22:12:10,705 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-07 22:12:10,706 WARN c.z.c.c.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-07 22:12:23,467 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 22:12:23,471 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-07 22:12:30,793 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-07 22:12:30,803 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 22:12:30,803 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-07 22:12:31,697 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-07 22:12:32,029 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-07 22:12:32,032 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@b91d8c4
+2021-03-07 22:12:32,037 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-07 22:12:32,052 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-07 22:12:32,055 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-07 22:12:32,056 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 22:12:32,078 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@42a9a63e
+2021-03-07 22:12:32,078 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-07 22:12:32,081 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-07 22:12:32,247 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-07 22:12:32,864 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-07 22:12:32,864 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-07 22:12:32,867 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-07 22:12:32,882 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-07 22:12:32,892 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-07 22:12:32,892 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-07 22:12:32,893 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-07 22:12:32,893 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-07 22:12:32,919 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-07 22:12:32,921 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-07 22:12:32,921 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 22:12:38,015 INFO c.z.c.c.MasterActionListener: hehe
+2021-03-07 22:12:38,015 INFO c.z.c.c.MasterActionListener: d
+2021-03-07 22:12:38,016 INFO c.z.c.c.MasterActionListener: Aloooooooooooo 
+2021-03-07 22:12:38,016 INFO c.z.c.c.MasterActionListener: Hellloooooooo
+2021-03-07 22:12:38,016 INFO c.z.c.c.MasterActionListener: Hi client coppy
+2021-03-07 22:12:38,016 INFO c.z.c.c.MasterActionListener: Hi client
+2021-03-07 22:12:38,016 INFO c.z.c.c.MasterActionListener: hello
+2021-03-07 22:12:38,017 INFO c.z.c.c.MasterActionListener: u
+2021-03-07 22:12:38,017 INFO c.z.c.c.MasterActionListener: hi
+2021-03-07 22:12:38,017 INFO c.z.c.c.MasterActionListener: a
+2021-03-07 22:12:38,017 INFO c.z.c.c.MasterActionListener: 1
+2021-03-07 22:12:38,017 INFO c.z.c.c.MasterActionListener: 2
+2021-03-07 22:12:38,017 INFO c.z.c.c.MasterActionListener: /show100
+2021-03-07 22:12:38,020 INFO c.z.c.c.MasterActionListener: a
+2021-03-07 22:12:38,021 INFO c.z.c.c.MasterActionListener: s
+2021-03-07 22:12:38,021 INFO c.z.c.c.MasterActionListener: hi
+2021-03-07 22:12:38,021 INFO c.z.c.c.MasterActionListener: a
+2021-03-07 22:12:38,021 INFO c.z.c.c.MasterActionListener: /Show
+2021-03-07 22:12:38,022 INFO c.z.c.c.MasterActionListener: Show100
+2021-03-07 22:12:38,022 INFO c.z.c.c.MasterActionListener: 2
+2021-03-07 22:12:38,022 INFO c.z.c.c.MasterActionListener: hok thanks
+2021-03-07 22:12:48,904 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-07 22:12:48,906 INFO c.z.c.ServerBootstrap: Server stopping...
+2021-03-08 08:45:39,022 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-08 08:45:39,028 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-08 08:45:39,028 INFO c.z.c.ServerBootstrap: Server starting...
+2021-03-08 08:45:39,211 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-08 08:45:39,525 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
+NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8103
+
+2021-03-08 08:45:39,528 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@754777cd
+2021-03-08 08:45:39,531 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-08 08:45:39,532 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-08 08:45:39,542 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-08 08:45:39,543 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-08 08:45:39,555 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@1eba372c
+2021-03-08 08:45:39,556 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
+2021-03-08 08:45:39,558 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-08 08:45:39,739 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-08 08:45:39,918 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-08 08:45:39,918 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-08 08:45:39,922 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-08 08:45:39,928 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-08 08:45:39,953 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-08 08:45:39,954 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-08 08:45:39,954 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-08 08:45:39,954 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-08 08:45:39,966 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8103
+2021-03-08 08:45:39,966 INFO c.z.c.ServerBootstrap: Server start successfully!
+2021-03-08 08:45:39,967 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-08 08:46:27,382 INFO c.z.c.c.MasterActionListener: hi
+2021-03-08 08:46:33,453 INFO c.z.c.c.MasterActionListener: ok
+2021-03-08 08:46:56,460 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-08 08:46:56,461 INFO c.z.c.ServerBootstrap: Server stopping...

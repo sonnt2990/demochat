@@ -1,4 +1,4 @@
-package com.zitga.chat.client;
+package com.zitga.chat.client.service;
 
 import com.zitga.bean.annotation.BeanComponent;
 import com.zitga.bean.annotation.BeanField;

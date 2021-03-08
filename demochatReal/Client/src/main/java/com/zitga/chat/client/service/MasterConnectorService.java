@@ -1,6 +1,7 @@
-package com.zitga.chat.client;
+package com.zitga.chat.client.service;
 
 import com.zitga.bean.annotation.BeanDelayedMethod;
+import com.zitga.chat.client.MasterActionListener;
 import com.zitga.core.config.ServerConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

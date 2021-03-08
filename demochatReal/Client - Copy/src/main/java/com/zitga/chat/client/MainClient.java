@@ -20,13 +20,13 @@ public class MainClient {
 			final StaticLoggerBinder binder = StaticLoggerBinder.getSingleton();
 			logger.info("[LOG] Binded LoggerFactory: {}", binder.getLoggerFactoryClassStr());
 
-			ServerBootstrap.start();
+			Bootstrap.start();
 			ServiceController.instance().init();
 
 
 		} catch (Exception e) {
 
-			ServerBootstrap.stop();
+			Bootstrap.stop();
 
 			logger.error(e.getMessage(), e);
 			throw new RuntimeException(e);

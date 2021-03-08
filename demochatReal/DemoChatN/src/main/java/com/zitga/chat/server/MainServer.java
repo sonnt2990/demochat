@@ -9,7 +9,7 @@ import com.zitga.core.ServerBootstrap;
 
 public class MainServer {
 	public static void main(String[] args) throws Exception {
-        Configurator.initialize("idle-summoner", "config/log4j.properties");
+        Configurator.initialize("ChatLog", "config/log4j.properties");
    	 Logger logger = LoggerFactory.getLogger(MainServer.class);
         try {
             final StaticLoggerBinder binder = StaticLoggerBinder.getSingleton();
@@ -21,7 +21,7 @@ public class MainServer {
 
         	logger.error(e.getMessage(), e);
         	
-            ServerBootstrap.stop();      
+            ServerBootstrap.stop();
             
             throw new RuntimeException(e);
         }
