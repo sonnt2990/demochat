@@ -5,6 +5,7 @@ import com.mongodb.MongoClientOptions;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoDatabase;
 import com.zitga.bean.annotation.BeanConfiguration;
+import com.zitga.bean.annotation.BeanMethod;
 import org.mongodb.morphia.Datastore;
 import org.mongodb.morphia.Morphia;
 
@@ -34,15 +35,14 @@ public class DbConfig {
         }
         return mongoDatabase;
     }
+    @BeanMethod
     private void init() {
         MongoClientOptions.Builder builder = new MongoClientOptions.Builder();
         builder.retryWrites(true);
-
         MongoClientURI connectionUri = new MongoClientURI(uri, builder);
         if (connectionUri.getDatabase() == null) {
             throw new RuntimeException("Database in connectionUri is null");
         }
-
         MongoClient mongoClient = new MongoClient(connectionUri);
         mongoDatabase = mongoClient.getDatabase(connectionUri.getDatabase());
 

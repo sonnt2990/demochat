@@ -21,34 +21,24 @@ public class ConnectionService implements ISocketConnectionListener {
 
     @Override
     public void onConnected(HandlerContext handlerContext) {
-        try {
-            peer.add(handlerContext.getPeer());
-
-            Boolean flag = true;
-            List<ClientModel> clients = clientService.allFind();
-            if (clients != null) {
-                for (ClientModel client : clients) {
-                    if (client.getId().equals(handlerContext.getPeer().getId())) {
-                        flag = false;
-                    }
-                }
-                if (flag == true) {
-                    ClientModel clientModel = new ClientModel(handlerContext.getPeer().getId(), null);
-                    clientService.clientSave(clientModel);
+        peer.add(handlerContext.getPeer());
+        Boolean flag = true;
+        List<ClientModel> clients = clientService.allFind();
+        if (clients != null) {
+            for (ClientModel client : clients) {
+                if (client.getId().equals(handlerContext.getPeer().getId())) {
+                    flag = false;
                 }
             }
-
-        } catch (Exception e) {
-            logger.info("Loi saveClient", e);
+            if (flag == true) {
+                ClientModel clientModel = new ClientModel(handlerContext.getPeer().getId(), null);
+                clientService.clientSave(clientModel);
+            }
         }
     }
 
     @Override
     public void onDisconnected(HandlerContext handlerContext) {
-        try {
-            peer.remove(handlerContext.getPeer());
-        } catch (Exception e) {
-            logger.info("Loi when disconnect ", e);
-        }
+        peer.remove(handlerContext.getPeer());
     }
 }

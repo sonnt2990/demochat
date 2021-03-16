@@ -11,25 +11,16 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 
 @BeanComponent
-public class MessageService implements Runnable{
+public class MessageService{
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @BeanField
     private MessageHistoryDAO messageHistoryDAO;
 
-    @BeanMethod
-    private void init() {
-        logger.info("Initializing MessageService ...");
-    }
     public List<String> findAllService(){
         return messageHistoryDAO.findAll();
     }
-
-    public MessageModel messageSaveService(MessageModel messageModel){
-        return messageHistoryDAO.messageSave(messageModel);
-    }
-    @Override
-    public void run() {
-        logger.info("Run in MessageService");
+    public void messageSaveService(MessageModel messageModel){
+        messageHistoryDAO.messageSave(messageModel);
     }
 }

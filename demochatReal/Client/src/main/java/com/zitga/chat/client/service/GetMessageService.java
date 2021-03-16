@@ -36,7 +36,7 @@ public class GetMessageService implements Runnable {
         in = new BufferedReader(new InputStreamReader(System.in));
     }
 
-    public void test(){
+    public void test() {
         scheduler.scheduleAtFixedRate(this, 1, 1, TimeUnit.SECONDS);
     }
 
@@ -45,12 +45,9 @@ public class GetMessageService implements Runnable {
         try {
             String string = in.readLine();
 
-//            logger.info(string);
-
             ByteBuf out = SocketUtils.createByteBuf(OpCode.SERVER_MESSAGE_RECEIVED);
             SerializeHelper.writeString(out, string);
             masterConnectorService.send(out);
-
 
         } catch (Exception e) {
             logger.error(e.getMessage(), e);

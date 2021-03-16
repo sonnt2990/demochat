@@ -2,6 +2,7 @@ package com.zitga.chat.client.service;
 
 import com.zitga.bean.annotation.BeanComponent;
 import com.zitga.bean.annotation.BeanField;
+import com.zitga.bean.annotation.BeanMethod;
 
 @BeanComponent
 public class ServiceController {

@@ -1,7 +1,6 @@
 package com.zitga.chat.client.service;
 
 import com.zitga.bean.annotation.BeanDelayedMethod;
-import com.zitga.chat.client.MasterActionListener;
 import com.zitga.core.config.ServerConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,15 +11,9 @@ import com.zitga.bean.annotation.BeanMethod;
 import com.zitga.core.utils.socket.SocketUtils;
 import com.zitga.core.utils.socket.tcpClient.TcpClientConfig;
 import com.zitga.core.utils.socket.tcpClient.TcpClientHandler;
-import com.zitga.utils.RandomUtils;
-import com.zitga.chat.base.constant.OpCode;
-import com.zitga.chat.client.constant.MasterOpcode;
 import com.zitga.chat.config.game.GameConfig;
 
 import io.netty.buffer.ByteBuf;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 
 @BeanComponent
 public class MasterConnectorService {

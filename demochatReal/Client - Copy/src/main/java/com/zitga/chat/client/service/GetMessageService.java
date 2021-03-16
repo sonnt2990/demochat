@@ -1,4 +1,4 @@
-package com.zitga.chat.client;
+package com.zitga.chat.client.service;
 
 import com.zitga.bean.annotation.BeanComponent;
 import com.zitga.bean.annotation.BeanField;
@@ -8,8 +8,6 @@ import com.zitga.core.scheduler.SchedulerService;
 import com.zitga.core.utils.socket.SerializeHelper;
 import com.zitga.core.utils.socket.SocketUtils;
 import io.netty.buffer.ByteBuf;
-import jdk.nashorn.internal.runtime.regexp.joni.constants.OPCode;
-import org.omg.CORBA.PUBLIC_MEMBER;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -38,7 +36,7 @@ public class GetMessageService implements Runnable {
         in = new BufferedReader(new InputStreamReader(System.in));
     }
 
-    public void test(){
+    public void test() {
         scheduler.scheduleAtFixedRate(this, 1, 1, TimeUnit.SECONDS);
     }
 
@@ -47,12 +45,9 @@ public class GetMessageService implements Runnable {
         try {
             String string = in.readLine();
 
-//            logger.info(string);
-
             ByteBuf out = SocketUtils.createByteBuf(OpCode.SERVER_MESSAGE_RECEIVED);
             SerializeHelper.writeString(out, string);
             masterConnectorService.send(out);
-
 
         } catch (Exception e) {
             logger.error(e.getMessage(), e);

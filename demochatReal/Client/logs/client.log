@@ -1,98 +1,84 @@
-2021-03-08 09:45:41,405 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
-2021-03-08 09:45:41,420 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
-2021-03-08 09:45:41,420 INFO c.z.c.ServerBootstrap: Client starting...
-2021-03-08 09:45:41,577 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
-2021-03-08 09:45:41,826 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
+2021-03-12 11:09:54,721 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-12 11:09:54,738 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-12 11:09:54,738 INFO c.z.c.ServerBootstrap: Client starting...
+2021-03-12 11:09:54,931 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
+2021-03-12 11:09:55,173 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
 	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
 NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8102
 
-2021-03-08 09:45:41,842 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@2b52c0d6
-2021-03-08 09:45:41,842 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
-2021-03-08 09:45:41,842 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
-2021-03-08 09:45:41,858 INFO c.z.c.c.MasterConnectorService: Initializing MasterConnectorService ...
-2021-03-08 09:45:41,858 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
-2021-03-08 09:45:41,858 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@21ec5d87
-2021-03-08 09:45:41,858 INFO c.z.c.c.MasterConnectorService: [MASTER] isConnected=false
-2021-03-08 09:45:41,858 INFO c.z.c.c.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
-2021-03-08 09:45:41,983 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
-2021-03-08 09:45:44,195 ERROR c.z.c.u.s.t.TcpClientConnector: Connection refused: no further information: /127.0.0.1:8101
-io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:8101
-Caused by: java.net.ConnectException: Connection refused: no further information
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:1.8.0_191]
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[?:1.8.0_191]
-	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-all-4.1.56.Final.jar:4.1.56.Final]
-	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
-2021-03-08 09:45:44,195 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
-2021-03-08 09:45:44,195 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
-2021-03-08 09:45:44,210 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
-2021-03-08 09:45:44,210 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
-2021-03-08 09:45:44,210 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
-2021-03-08 09:45:44,210 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
-2021-03-08 09:45:44,210 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8102
-2021-03-08 09:45:44,210 INFO c.z.c.ServerBootstrap: Client start successfully!
-2021-03-08 09:45:44,210 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
-2021-03-08 09:45:50,551 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
-2021-03-08 09:45:50,551 INFO c.z.c.ServerBootstrap: Client stopping...
-2021-03-08 09:47:33,405 INFO c.z.c.c.MainClient: [LOG] Binded LoggerFactory: org.apache.logging.slf4j.Log4jLoggerFactory
-2021-03-08 09:47:33,405 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
-2021-03-08 09:47:33,405 INFO c.z.c.ServerBootstrap: Client starting...
-2021-03-08 09:47:33,561 INFO c.z.b.h.BeanComponentScanner: [BeanComponent] Found 12 components
-2021-03-08 09:47:33,780 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.core.config.ServerConfig with 
-	bossThreadNumber=0, workerThreadNumber=0, schedulerThreadNumber=0
-NetworkConfig{maxConnection=100000, idleTimeOut=900, keepAlive=true, headerSize=4, enableLog=false, logLevel='DEBUG'}	[tcp]: enable=true, port=8102
-
-2021-03-08 09:47:33,796 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@2b52c0d6
-2021-03-08 09:47:33,796 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
-2021-03-08 09:47:33,796 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
-2021-03-08 09:47:33,796 INFO c.z.c.c.s.MasterConnectorService: Initializing MasterConnectorService ...
-2021-03-08 09:47:33,796 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
-2021-03-08 09:47:33,811 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.MasterActionListener@21ec5d87
-2021-03-08 09:47:33,811 INFO c.z.c.c.s.MasterConnectorService: [MASTER] isConnected=false
-2021-03-08 09:47:33,811 INFO c.z.c.c.s.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
-2021-03-08 09:47:33,921 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
-2021-03-08 09:47:34,092 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
-2021-03-08 09:47:34,092 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
-2021-03-08 09:47:34,108 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
-2021-03-08 09:47:34,108 INFO c.z.c.c.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
-2021-03-08 09:47:34,124 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
-2021-03-08 09:47:34,124 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
-2021-03-08 09:47:34,124 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
-2021-03-08 09:47:34,124 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
-2021-03-08 09:47:34,139 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8102
-2021-03-08 09:47:34,139 INFO c.z.c.ServerBootstrap: Client start successfully!
-2021-03-08 09:47:34,139 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
-2021-03-08 09:47:37,791 INFO c.z.c.c.MasterActionListener: hi
-2021-03-08 09:47:42,572 INFO c.z.c.c.MasterActionListener: hehe
-2021-03-08 09:47:42,572 INFO c.z.c.c.MasterActionListener: d
-2021-03-08 09:47:42,572 INFO c.z.c.c.MasterActionListener: Aloooooooooooo 
-2021-03-08 09:47:42,572 INFO c.z.c.c.MasterActionListener: Hellloooooooo
-2021-03-08 09:47:42,572 INFO c.z.c.c.MasterActionListener: Hi client coppy
-2021-03-08 09:47:42,572 INFO c.z.c.c.MasterActionListener: Hi client
-2021-03-08 09:47:42,572 INFO c.z.c.c.MasterActionListener: hello
-2021-03-08 09:47:42,572 INFO c.z.c.c.MasterActionListener: u
-2021-03-08 09:47:42,572 INFO c.z.c.c.MasterActionListener: hi
-2021-03-08 09:47:42,572 INFO c.z.c.c.MasterActionListener: a
-2021-03-08 09:47:42,572 INFO c.z.c.c.MasterActionListener: 1
-2021-03-08 09:47:42,572 INFO c.z.c.c.MasterActionListener: 2
-2021-03-08 09:47:42,572 INFO c.z.c.c.MasterActionListener: /show100
-2021-03-08 09:47:42,588 INFO c.z.c.c.MasterActionListener: a
-2021-03-08 09:47:42,588 INFO c.z.c.c.MasterActionListener: s
-2021-03-08 09:47:42,588 INFO c.z.c.c.MasterActionListener: hi
-2021-03-08 09:47:42,588 INFO c.z.c.c.MasterActionListener: a
-2021-03-08 09:47:42,588 INFO c.z.c.c.MasterActionListener: /Show
-2021-03-08 09:47:42,588 INFO c.z.c.c.MasterActionListener: Show100
-2021-03-08 09:47:42,588 INFO c.z.c.c.MasterActionListener: 2
-2021-03-08 09:47:42,588 INFO c.z.c.c.MasterActionListener: hok thanks
-2021-03-08 09:47:42,588 INFO c.z.c.c.MasterActionListener: hi
-2021-03-08 09:47:42,588 INFO c.z.c.c.MasterActionListener: ok
-2021-03-08 09:47:42,588 INFO c.z.c.c.MasterActionListener: hi
-2021-03-08 09:47:50,441 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
-2021-03-08 09:47:50,441 INFO c.z.c.ServerBootstrap: Client stopping...
+2021-03-12 11:09:55,176 INFO c.z.b.h.BeanConfigHelper: [BeanConfiguration] Init class com.zitga.chat.config.game.GameConfig with com.zitga.chat.config.game.GameConfig@4a9cc6cb
+2021-03-12 11:09:55,179 INFO c.z.b.h.BeanMethodHelper: [BeanMethod] Found 0 methods
+2021-03-12 11:09:55,183 INFO c.z.c.c.ServerConfig: Auto select schedulerThreadNumber=8
+2021-03-12 11:09:55,188 INFO c.z.c.c.s.MasterConnectorService: Initializing MasterConnectorService ...
+2021-03-12 11:09:55,189 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-12 11:09:55,197 INFO c.z.c.u.s.t.TcpClientHandler: Mapped code 29 to com.zitga.chat.client.service.MasterActionListener@4e4efc1b
+2021-03-12 11:09:55,198 INFO c.z.c.c.s.MasterConnectorService: [MASTER] isConnected=false
+2021-03-12 11:09:55,198 INFO c.z.c.c.s.MasterConnectorService: [MASTER] Retry connecting to 127.0.0.1:8101
+2021-03-12 11:09:55,335 INFO c.z.c.u.s.t.TcpClientConnector: Connecting to server at 127.0.0.1:8101
+2021-03-12 11:09:55,539 INFO c.z.c.u.s.t.TcpClientHandler: Connected to server at 127.0.0.1:8101
+2021-03-12 11:09:55,540 INFO c.z.c.c.ServerConfig: Auto select bossThreadNumber=2
+2021-03-12 11:09:55,542 INFO c.z.c.c.ServerConfig: Auto select workerThreadNumber=8
+2021-03-12 11:09:55,549 INFO c.z.c.c.s.MasterActionListener: [MASTER] Connected to master server at /127.0.0.1:8101
+2021-03-12 11:09:55,554 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 7 to com.zitga.core.handler.socket.basic.EchoHandler
+2021-03-12 11:09:55,554 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 1 to com.zitga.core.handler.socket.basic.SyncClockTimeHandler
+2021-03-12 11:09:55,554 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 4 to com.zitga.core.handler.socket.basic.UdpHandshakeHandler
+2021-03-12 11:09:55,554 INFO c.z.c.r.s.SocketHandlerRegistry: Mapped code 0 to com.zitga.core.handler.socket.basic.PingHandler
+2021-03-12 11:09:55,564 INFO c.z.c.t.s.TcpTransporter: TCP transporter is listening on port 8102
+2021-03-12 11:09:55,564 INFO c.z.c.ServerBootstrap: Client start successfully!
+2021-03-12 11:09:55,564 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-12 11:10:14,058 INFO c.z.c.c.s.MasterActionListener: aaa
+2021-03-12 11:10:22,857 INFO c.z.c.c.s.MasterActionListener: hehe
+2021-03-12 11:10:22,858 INFO c.z.c.c.s.MasterActionListener: d
+2021-03-12 11:10:22,858 INFO c.z.c.c.s.MasterActionListener: Aloooooooooooo 
+2021-03-12 11:10:22,858 INFO c.z.c.c.s.MasterActionListener: Hellloooooooo
+2021-03-12 11:10:22,858 INFO c.z.c.c.s.MasterActionListener: Hi client coppy
+2021-03-12 11:10:22,858 INFO c.z.c.c.s.MasterActionListener: Hi client
+2021-03-12 11:10:22,858 INFO c.z.c.c.s.MasterActionListener: hello
+2021-03-12 11:10:22,858 INFO c.z.c.c.s.MasterActionListener: u
+2021-03-12 11:10:22,859 INFO c.z.c.c.s.MasterActionListener: hi
+2021-03-12 11:10:22,859 INFO c.z.c.c.s.MasterActionListener: a
+2021-03-12 11:10:22,859 INFO c.z.c.c.s.MasterActionListener: 1
+2021-03-12 11:10:22,859 INFO c.z.c.c.s.MasterActionListener: 2
+2021-03-12 11:10:22,859 INFO c.z.c.c.s.MasterActionListener: /show100
+2021-03-12 11:10:22,859 INFO c.z.c.c.s.MasterActionListener: a
+2021-03-12 11:10:22,859 INFO c.z.c.c.s.MasterActionListener: s
+2021-03-12 11:10:22,860 INFO c.z.c.c.s.MasterActionListener: hi
+2021-03-12 11:10:22,860 INFO c.z.c.c.s.MasterActionListener: a
+2021-03-12 11:10:22,860 INFO c.z.c.c.s.MasterActionListener: /Show
+2021-03-12 11:10:22,860 INFO c.z.c.c.s.MasterActionListener: Show100
+2021-03-12 11:10:22,860 INFO c.z.c.c.s.MasterActionListener: 2
+2021-03-12 11:10:22,860 INFO c.z.c.c.s.MasterActionListener: hok thanks
+2021-03-12 11:10:22,860 INFO c.z.c.c.s.MasterActionListener: hi
+2021-03-12 11:10:22,861 INFO c.z.c.c.s.MasterActionListener: ok
+2021-03-12 11:10:22,861 INFO c.z.c.c.s.MasterActionListener: hi
+2021-03-12 11:10:22,861 INFO c.z.c.c.s.MasterActionListener: hello
+2021-03-12 11:10:22,861 INFO c.z.c.c.s.MasterActionListener: hi
+2021-03-12 11:10:22,861 INFO c.z.c.c.s.MasterActionListener: 5:14PM
+2021-03-12 11:10:22,863 INFO c.z.c.c.s.MasterActionListener: 5:15PM
+2021-03-12 11:10:22,864 INFO c.z.c.c.s.MasterActionListener: OK.
+2021-03-12 11:10:22,864 INFO c.z.c.c.s.MasterActionListener: Ok..
+2021-03-12 11:10:22,864 INFO c.z.c.c.s.MasterActionListener: hi
+2021-03-12 11:10:22,864 INFO c.z.c.c.s.MasterActionListener: kk
+2021-03-12 11:10:22,864 INFO c.z.c.c.s.MasterActionListener: K save message /Show100
+2021-03-12 11:10:22,864 INFO c.z.c.c.s.MasterActionListener: Oke
+2021-03-12 11:10:22,864 INFO c.z.c.c.s.MasterActionListener: 5:37PM
+2021-03-12 11:10:22,865 INFO c.z.c.c.s.MasterActionListener: Succes
+2021-03-12 11:10:22,865 INFO c.z.c.c.s.MasterActionListener: Perfect
+2021-03-12 11:10:22,865 INFO c.z.c.c.s.MasterActionListener: Oke
+2021-03-12 11:10:22,865 INFO c.z.c.c.s.MasterActionListener: Okee
+2021-03-12 11:10:22,865 INFO c.z.c.c.s.MasterActionListener: OKeee
+2021-03-12 11:10:22,865 INFO c.z.c.c.s.MasterActionListener: OKeeee
+2021-03-12 11:10:22,865 INFO c.z.c.c.s.MasterActionListener: 5:58PM
+2021-03-12 11:10:22,866 INFO c.z.c.c.s.MasterActionListener: Con 2 phut
+2021-03-12 11:10:22,866 INFO c.z.c.c.s.MasterActionListener: Oke
+2021-03-12 11:10:22,866 INFO c.z.c.c.s.MasterActionListener: 546
+2021-03-12 11:10:22,866 INFO c.z.c.c.s.MasterActionListener: 5616
+2021-03-12 11:10:22,866 INFO c.z.c.c.s.MasterActionListener: 5165
+2021-03-12 11:10:22,866 INFO c.z.c.c.s.MasterActionListener: sdf
+2021-03-12 11:10:22,866 INFO c.z.c.c.s.MasterActionListener: sdf
+2021-03-12 11:10:22,866 INFO c.z.c.c.s.MasterActionListener: aaa
+2021-03-12 11:25:22,880 ERROR c.z.c.u.s.t.TcpClientHandler: Listener with opCode 3 not found
+2021-03-12 11:25:22,882 INFO c.z.c.u.s.t.TcpClientHandler: Disconnected to server at 127.0.0.1:8101
+2021-03-12 11:25:22,882 WARN c.z.c.c.s.MasterActionListener: [MASTER] Disconnected to master server
+2021-03-12 12:03:45,425 INFO c.z.c.ServerBootstrap: -----------------------------------------------------------------
+2021-03-12 12:03:45,444 INFO c.z.c.ServerBootstrap: Client stopping...

@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 
 @BeanComponent
-public class ClientService implements Runnable {
+public class ClientService {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @BeanField
@@ -21,10 +21,5 @@ public class ClientService implements Runnable {
     }
     public List<ClientModel> allFind(){
         return clientDAO.findAll();
-    }
-
-    @Override
-    public void run() {
-        logger.info("Run in ClientService");
     }
 }

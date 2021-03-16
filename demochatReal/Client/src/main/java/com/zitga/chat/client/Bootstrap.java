@@ -5,7 +5,7 @@ import com.zitga.core.ServerBootstrap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Bootstrap extends ServerBootstrap{
+public class Bootstrap extends ServerBootstrap {
 
     private static Logger logger = LoggerFactory.getLogger(ServerBootstrap.class);
 
@@ -32,6 +32,7 @@ public class Bootstrap extends ServerBootstrap{
             throw e;
         }
     }
+
     public static void stop() {
         try {
             logger.info("-----------------------------------------------------------------");
